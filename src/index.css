@@ -146,3 +146,10 @@ html {
 .animate-slideInLeft {
   animation: slideInLeft 0.8s ease-out forwards;
 }
+
+/* Responsive design helpers */
+@media (max-width: 640px) {
+  .mobile-padding {
+    @apply px-4 py-8;
+  }
+}
