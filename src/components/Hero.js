@@ -10,6 +10,9 @@ const Hero = () => {
         <div className="absolute top-1/2 left-1/4 w-64 h-64 bg-green-200 rounded-full opacity-15 animate-pulse"></div>
       </div>
 
+      {/* Curved design element */}
+      <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-r from-amber-100 to-green-100 transform rotate-1"></div>
+
     </section>
   );
 };
