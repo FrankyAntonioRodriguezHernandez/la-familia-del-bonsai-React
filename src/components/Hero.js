@@ -31,7 +31,23 @@ const Hero = () => {
               </button>
             </div>
 
-            
+            {/* Bonsai Image */}
+            <div className="flex justify-center lg:justify-end">
+              <div className="relative">
+                <div className="w-80 h-80 bg-white rounded-full shadow-2xl overflow-hidden border-8 border-amber-100">
+                  <img
+                    src="https://images.unsplash.com/photo-1614797091849-05915639d85a"
+                    alt="Bonsai Tree"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="absolute -top-4 -right-4 w-24 h-24 bg-emerald-500 rounded-full opacity-20 animate-bounce"></div>
+                <div className="absolute -bottom-4 -left-4 w-32 h-32 bg-amber-500 rounded-full opacity-20 animate-bounce"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
