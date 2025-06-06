@@ -19,7 +19,18 @@ const Information = () => {
     }
   ];
 
-  
+  return (
+    <section id="informacion" className="py-20 bg-gradient-to-b from-green-50 to-amber-50 relative overflow-hidden">
+      {/* Organic background shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 right-10 w-64 h-64 bg-emerald-200 rounded-full opacity-10 transform rotate-45"></div>
+        <div className="absolute bottom-20 left-10 w-80 h-80 bg-amber-200 rounded-full opacity-10 transform -rotate-45"></div>
+      </div>
+
+        </div>
+      </div>
+    </section>
+  );
 };
 
 export default Information;
