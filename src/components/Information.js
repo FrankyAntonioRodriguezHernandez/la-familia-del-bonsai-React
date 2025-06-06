@@ -39,7 +39,27 @@ const Information = () => {
           </p>
         </div>
 
-       
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {infoCards.map((card, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300">
+              <div className="h-48 overflow-hidden">
+                <img
+                  src={card.image}
+                  alt={card.title}
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold text-gray-800 mb-3">
+                  {card.title}
+                </h3>
+                <p className="text-gray-600 leading-relaxed">
+                  {card.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
