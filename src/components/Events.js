@@ -48,6 +48,24 @@ const Events = () => {
           </h2>
         </div>
 
+        <div className="relative">
+          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
+              {/* Image Section */}
+              <div className="relative h-96 lg:h-auto">
+                <img
+                  src={events[currentSlide].image}
+                  alt={events[currentSlide].title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                  {currentSlide + 1} / {events.length}
+                </div>
+              </div>
+
+              
+          </div>
+        </div>
       </div>
     </section>
   );
