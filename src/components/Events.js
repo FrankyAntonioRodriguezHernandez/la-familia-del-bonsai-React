@@ -33,6 +33,16 @@ const Events = () => {
     setCurrentSlide((prev) => (prev - 1 + events.length) % events.length);
   };
 
+  return (
+    <section id="eventos" className="py-20 bg-gradient-to-b from-green-50 to-amber-50 relative overflow-hidden">
+      {/* Organic background shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-72 h-72 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-64 h-64 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
+      </div>
+
+    </section>
+  );
 };
 
 export default Events;
