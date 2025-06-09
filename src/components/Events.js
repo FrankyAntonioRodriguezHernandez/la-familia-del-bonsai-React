@@ -63,8 +63,22 @@ const Events = () => {
                 </div>
               </div>
 
-              
+              {/* Content Section */}
+              <div className="p-8 lg:p-12 flex flex-col justify-center">
+                <h3 className="text-3xl lg:text-4xl font-bold text-gray-800 mb-6">
+                  {events[currentSlide].title}
+                </h3>
+                <p className="text-lg text-gray-600 mb-8 leading-relaxed">
+                  {events[currentSlide].description}
+                </p>
+                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-lg w-fit">
+                  {events[currentSlide].buttonText}
+                </button>
+              </div>
+            </div>
           </div>
+
+          
         </div>
       </div>
     </section>
