@@ -53,6 +53,32 @@ const Testimonials = () => {
           </p>
         </div>
 
+        {/* Desktop Testimonials */}
+        <div className="hidden md:flex justify-center items-center space-x-4 overflow-x-auto pb-4">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="flex-shrink-0 w-80 bg-white rounded-2xl shadow-xl p-6 hover:shadow-2xl transition-shadow duration-300">
+              <div className="flex items-center mb-4">
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="w-16 h-16 rounded-full mr-4 object-cover"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
+                  <div className="flex text-yellow-400 mt-1">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <StarIcon key={i} className="h-4 w-4" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                "{testimonial.text}"
+              </p>
+            </div>
+          ))}
+        </div>
+
       </div>
     </section>
   );
