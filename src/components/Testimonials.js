@@ -43,6 +43,17 @@ const Testimonials = () => {
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-200 rounded-full opacity-10 transform -rotate-45"></div>
       </div>
 
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-6">
+            OPINIONES
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Lo que dicen nuestros clientes sobre nuestro trabajo
+          </p>
+        </div>
+
+      </div>
     </section>
   );
 };
