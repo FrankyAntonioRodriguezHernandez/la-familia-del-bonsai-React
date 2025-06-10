@@ -79,6 +79,31 @@ const Testimonials = () => {
           ))}
         </div>
 
+        {/* Mobile Testimonials */}
+        <div className="md:hidden space-y-6">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className="bg-white rounded-2xl shadow-xl p-6">
+              <div className="flex items-center mb-4">
+                <img
+                  src={testimonial.avatar}
+                  alt={testimonial.name}
+                  className="w-16 h-16 rounded-full mr-4 object-cover"
+                />
+                <div>
+                  <h4 className="font-semibold text-gray-800">{testimonial.name}</h4>
+                  <div className="flex text-yellow-400 mt-1">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <StarIcon key={i} className="h-4 w-4" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <p className="text-gray-600 leading-relaxed">
+                "{testimonial.text}"
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   );
