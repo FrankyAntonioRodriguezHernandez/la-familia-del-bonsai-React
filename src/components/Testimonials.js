@@ -34,6 +34,17 @@ const Testimonials = () => {
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
     }
   ];
+
+  return (
+    <section className="py-20 bg-gradient-to-b from-amber-50 to-green-50 relative overflow-hidden">
+      {/* Organic background shapes */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-80 h-80 bg-emerald-200 rounded-full opacity-10 transform rotate-45"></div>
+        <div className="absolute bottom-20 right-10 w-96 h-96 bg-amber-200 rounded-full opacity-10 transform -rotate-45"></div>
+      </div>
+
+    </section>
+  );
 };
 
 export default Testimonials;
