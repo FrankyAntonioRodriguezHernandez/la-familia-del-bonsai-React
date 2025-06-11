@@ -6,14 +6,8 @@ import Information from './components/Information';
 import Services from './components/Services';
 import Events from './components/Events';
 import Testimonials from './components/Testimonials';
-/*
 import Contact from './components/Contact';
 
-Abajo poner 
-      
-      
-      <Contact />
-*/
 function App() {
   return (
     <div className="App">
@@ -23,7 +17,7 @@ function App() {
       <Services />
       <Events />
       <Testimonials />
-
+      <Contact />
     </div>
   );
 }
