@@ -29,8 +29,18 @@ const Contact = () => {
                 Información de Contacto
               </h3>
               
-              
-      </div>
+              <div className="space-y-6">
+                <div className="flex items-center space-x-4">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <PhoneIcon className="h-6 w-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-600">Teléfono</p>
+                    <p className="text-gray-800 font-semibold">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+
+                
     </section>
   );
 };
