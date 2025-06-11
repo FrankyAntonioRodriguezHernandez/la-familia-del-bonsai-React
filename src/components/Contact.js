@@ -40,7 +40,18 @@ const Contact = () => {
                   </div>
                 </div>
 
-                
+                <div className="flex items-center space-x-4">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <FaWhatsapp className="h-6 w-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-600">WhatsApp</p>
+                    <p className="text-gray-800 font-semibold">+1 (555) 123-4567</p>
+                  </div>
+                </div>
+
+        </div>
+      </div>
     </section>
   );
 };
