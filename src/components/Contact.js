@@ -110,6 +110,25 @@ const Contact = () => {
               </div>
             </div>
 
+            {/* Contact Form */}
+            <div className="bg-white rounded-2xl shadow-xl p-8">
+              <h3 className="text-2xl font-bold text-gray-800 mb-6">
+                Envíanos un Mensaje
+              </h3>
+              
+              <form className="space-y-6">
+                <div>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+                    Nombre
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors duration-300"
+                    placeholder="Tu nombre"
+                  />
+                </div>
+
         </div>
       </div>
     </section>
