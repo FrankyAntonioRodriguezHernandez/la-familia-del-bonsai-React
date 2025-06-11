@@ -74,7 +74,30 @@ const Contact = () => {
                 </div>
               </div>
 
-        </div>
+              {/* Social Media */}
+              <div className="mt-8 pt-8 border-t border-gray-200">
+                <h4 className="text-lg font-semibold text-gray-800 mb-4">
+                  Síguenos
+                </h4>
+                <div className="flex space-x-4">
+                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
+                    <FaInstagram className="h-5 w-5" />
+                  </a>
+                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
+                    <FaFacebook className="h-5 w-5" />
+                  </a>
+                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
+                    <FaTwitter className="h-5 w-5" />
+                  </a>
+                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
+                    <FaWhatsapp className="h-5 w-5" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          
       </div>
     </section>
   );
