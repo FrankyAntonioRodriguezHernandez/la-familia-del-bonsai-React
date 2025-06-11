@@ -60,6 +60,20 @@ const Contact = () => {
                   </div>
                 </div>
 
+                <div className="flex items-center space-x-4">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <MapPinIcon className="h-6 w-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-600">Dirección</p>
+                    <p className="text-gray-800 font-semibold">
+                      Calle del Bonsai 123<br />
+                      Ciudad Jardín, Estado 12345
+                    </p>
+                  </div>
+                </div>
+              </div>
+
         </div>
       </div>
     </section>
