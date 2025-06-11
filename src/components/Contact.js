@@ -50,6 +50,16 @@ const Contact = () => {
                   </div>
                 </div>
 
+                <div className="flex items-center space-x-4">
+                  <div className="bg-emerald-100 p-3 rounded-full">
+                    <EnvelopeIcon className="h-6 w-6 text-emerald-600" />
+                  </div>
+                  <div>
+                    <p className="text-gray-600">Email</p>
+                    <p className="text-gray-800 font-semibold">info@familiadelbonsai.com</p>
+                  </div>
+                </div>
+
         </div>
       </div>
     </section>
