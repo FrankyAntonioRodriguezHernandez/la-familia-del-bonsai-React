@@ -10,6 +10,19 @@ const Contact = () => {
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
         <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
       </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-6">
+            CONTACTO
+          </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            Estamos aquí para ayudarte a crear el espacio zen perfecto
+          </p>
+        </div>
+
+        
+      </div>
     </section>
   );
 };
