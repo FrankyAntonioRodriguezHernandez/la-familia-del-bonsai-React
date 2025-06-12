@@ -1,8 +1,12 @@
 import React from 'react';
 import { StarIcon } from '@heroicons/react/24/solid';
+import Slider from 'react-slick/lib/slider';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+import { MdHeight } from 'react-icons/md';
 
-const Testimonials = () => {
-  const testimonials = [
+
+const Testimonials = () => {  const testimonials = [
     {
       name: "Ana Sol",
       text: "Amo mi trabajo, gracias por las lindas palabras y me alegra que les haya gustado",
@@ -30,7 +34,7 @@ const Testimonials = () => {
     {
       name: "Isabel Torres",
       text: "Profesionales excepcionales, sus bonsais son verdaderas obras de arte",
-      rating: 5,
+      rating: 4,
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
     }
   ];
@@ -107,6 +111,8 @@ const Testimonials = () => {
       </div>
     </section>
   );
+
+
 };
 
 export default Testimonials;

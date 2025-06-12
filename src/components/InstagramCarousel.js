@@ -1,0 +1,65 @@
+import React from 'react';
+import Slider from 'react-slick/lib/slider';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
+
+const InstagramCarousel = () => {
+  const images = [
+    'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face',
+    'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face',
+    'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face',
+    'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face',
+  ]
+
+  const settings = {dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2
+      }
+    }
+  ],
+    appendDots: (dots) => (
+      <div style={{position: 'absolute', bottom: '20px', width: '100%', textAlign: 'center'}}>
+        <ul style={{margin: '0', padding: '0', display: 'inline-block'}}>{dots}</ul>
+      </div>
+    )
+  }
+  
+  const containerStyles = {
+    padding: '0 20px',
+    maxWidth: '600px', // Máximo ancho en desktop
+    margin: '0 auto', // Centrado
+    width: '100%' // Ocupa el 100% hasta el máximo
+  }
+
+  const imageStyles = {
+    width: '100%',
+    height: 'auto',
+    maxWidth: '300px', // Máximo tamaño de la imagen
+    margin: '0 auto', // Centrar imagen
+    borderRadius: '50%', // Para mantener el estilo circular
+    display: 'block' // Elimina espacio inferior de img
+  }
+
+  return(
+    <div style={containerStyles}>
+      <h2 style={{textAlign: 'center'}}>Carrusel Instagram</h2>
+      <Slider {...settings}>
+        {images.map((image, index) => (
+          <div key={index} style={{padding: '10px', textAlign: 'center'}}>
+            <img src={image} alt={`slide-${index}`} style={imageStyles} />
+          </div>
+        ))}
+      </Slider>
+    </div>
+  )
+};
+
+export default InstagramCarousel;
