@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import { FaStar, FaStarHalfAlt, FaRegStar } from 'react-icons/fa';
+import { FaStar, FaRegStar } from 'react-icons/fa';
 
 const Testimonials = () => {
   const testimonials = [
@@ -67,18 +67,18 @@ const Testimonials = () => {
   
   const containerStyles = {
     padding: '0 20px',
-    maxWidth: '600px', // Máximo ancho en desktop
-    margin: '0 auto', // Centrado
-    width: '100%' // Ocupa el 100% hasta el máximo
+    maxWidth: '600px', 
+    margin: '0 auto',
+    width: '100%'
   }
 
   const imageStyles = {
     width: '100%',
     height: 'auto',
-    maxWidth: '300px', // Máximo tamaño de la imagen
-    margin: '0 auto', // Centrar imagen
-    borderRadius: '50%', // Para mantener el estilo circular
-    display: 'block' // Elimina espacio inferior de img
+    maxWidth: '300px', 
+    margin: '0 auto', 
+    borderRadius: '50%',
+    display: 'block'
   }
 
   return(
