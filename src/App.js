@@ -8,8 +8,6 @@ import Events from './components/Events';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 
-import InstagramCarousel from './components/InstagramCarousel'
-
 function App() {
   return (
     <div className="App">
@@ -18,7 +16,7 @@ function App() {
       <Information />
       <Services />
       <Events />
-      <InstagramCarousel />
+      <Testimonials />
       <Contact />
     </div>
   );
