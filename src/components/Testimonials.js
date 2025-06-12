@@ -51,19 +51,19 @@ const Testimonials = () => {
   };
   
   const settings = {
-  dots: true,
-  infinite: true,
-  speed: 500,
-  slidesToShow: 1,
-  slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 5000,
-  appendDots: (dots) => (
-    <div style={{ position: 'absolute', bottom: '-30px', width: '100%', textAlign: 'center' }}>
-      <ul style={{ margin: '0', padding: '0', display: 'inline-block' }}>{dots}</ul>
-    </div>
-  )
-};
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    appendDots: (dots) => (
+      <div style={{ position: 'absolute', bottom: '-30px', width: '100%', textAlign: 'center' }}>
+        <ul style={{ margin: '0', padding: '0', display: 'inline-block' }}>{dots}</ul>
+      </div>
+    )
+  };
   
   const containerStyles = {
     padding: '0 20px',
