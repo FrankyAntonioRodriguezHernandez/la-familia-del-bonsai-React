@@ -10,7 +10,7 @@ const Testimonials = () => {
       name: "Ana Sol",
       text: "Amo mi trabajo, gracias por las lindas palabras y me alegra que les haya gustado",
       rating: 5,
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b332c371?w=150&h=150&fit=crop&crop=face"
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Carlos Mendoza",
@@ -40,19 +40,13 @@ const Testimonials = () => {
 
   const StarRating = ({ rating }) => {
     const stars = [];
-    const fullStars = Math.floor(rating);
-    const hasHalfStar = rating % 1 !== 0;
-    
     for (let i = 1; i <= 5; i++) {
-      if (i <= fullStars) {
-        stars.push(<FaStar key={i} className="text-yellow-400" />);
-      } else if (i === fullStars + 1 && hasHalfStar) {
-        stars.push(<FaStarHalfAlt key={i} className="text-yellow-400" />);
-      } else {
-        stars.push(<FaRegStar key={i} className="text-yellow-400" />);
-      }
+      stars.push(
+        i <= rating 
+          ? <FaStar key={i} className="text-yellow-400" /> 
+          : <FaRegStar key={i} className="text-yellow-400" />
+      );
     }
-    
     return <div className="flex justify-center">{stars}</div>;
   };
   
