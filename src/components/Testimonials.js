@@ -88,17 +88,32 @@ const Testimonials = () => {
   }
 
   return(
-    <div style={containerStyles}>
-      <h2 style={{textAlign: 'center'}}>Carrusel Instagram</h2>
-      <Slider {...settings}>
-        {images.map((image, index) => (
-          <div key={index} style={{padding: '10px', textAlign: 'center'}}>
-            <img src={image} alt={`slide-${index}`} style={imageStyles} />
-          </div>
-        ))}
-      </Slider>
+    <div className="py-12 bg-gray-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Testimonios de Clientes</h2>
+        <div className="relative">
+          <Slider {...settings}>
+            {testimonials.map((testimonial, index) => (
+              <div key={index} className="px-4">
+                <div className="bg-white p-8 rounded-lg shadow-md text-center h-full">
+                  <div className="flex justify-center mb-4">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name} 
+                      className="w-20 h-20 rounded-full object-cover border-4 border-white shadow"
+                    />
+                  </div>
+                  <StarRating rating={testimonial.rating} />
+                  <h3 className="text-xl font-semibold mt-4 text-gray-800">{testimonial.name}</h3>
+                  <p className="mt-4 text-gray-600 italic">"{testimonial.text}"</p>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
     </div>
-  )
+  );
 };
 
 export default Testimonials;
