@@ -1,23 +1,26 @@
 import React from 'react';
+import Poda1 from '../assets/Poda1.jpg'
+import Arrendamiento1 from '../assets/Arrendamiento1.jpg'
+import Decoracion1 from '../assets/Decoracion1.jpg'
 
 const Services = () => {
   const services = [
     {
       title: "Poda y técnica de bonsai",
       description: "Más que una creación, una experiencia que se alimenta de naturaleza",
-      image: "https://images.pexels.com/photos/7127356/pexels-photo-7127356.jpeg",
+      image: Poda1,
       buttonText: "Ver"
     },
     {
       title: "Arrendamiento de bonsai",
       description: "Le ofrecemos la oportunidad de tener un bonsai como experiencia para eventos especiales",
-      image: "https://images.pexels.com/photos/1198741/pexels-photo-1198741.jpeg",
+      image: Arrendamiento1,
       buttonText: "Ver"
     },
     {
       title: "Decoración de eventos",
       description: "Transformamos su evento en una experiencia única, integrando elegancia y armonía",
-      image: "https://images.pexels.com/photos/27113617/pexels-photo-27113617.jpeg",
+      image: Decoracion1,
       buttonText: "Ver"
     }
   ];
