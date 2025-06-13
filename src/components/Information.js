@@ -1,21 +1,25 @@
 import React from 'react';
+import zen1 from '../assets/zen1.jpg'
+import Bounganvilleas1 from '../assets/Bounganvilleas1.jpg'
+import ExpoVenta1 from '../assets/ExpoVenta1.jpg'
+
 
 const Information = () => {
   const infoCards = [
+        {
+      title: "Adaptamos el modelo de ecosistema natural",
+      description: "Respetamos la naturaleza y sus ciclos, creando equilibrio duradero.",
+      image: Bounganvilleas1
+    },
     {
       title: "Transformamos cada espacio en un refugio zen",
       description: "Cada bonsai es único, cada espacio es especial. Creamos armonía perfecta.",
-      image: "https://images.unsplash.com/photo-1585544224318-147fb1bcc462"
-    },
-    {
-      title: "Adaptamos el modelo de ecosistema natural",
-      description: "Respetamos la naturaleza y sus ciclos, creando equilibrio duradero.",
-      image: "https://images.unsplash.com/photo-1713372086778-cb578f06b866"
+      image: zen1
     },
     {
       title: "Innovamos en poner la tradición milenaria",
       description: "Combinamos técnicas ancestrales con innovación moderna.",
-      image: "https://images.pexels.com/photos/732423/pexels-photo-732423.jpeg"
+      image: ExpoVenta1
     }
   ];
 
