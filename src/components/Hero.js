@@ -1,4 +1,5 @@
 import React from 'react';
+import LaFamiliaDelBonsai1 from '../assets/LaFamiliaDelBonsai1.jpg';
 
 const Hero = () => {
   return (
@@ -36,8 +37,8 @@ const Hero = () => {
               <div className="relative">
                 <div className="w-80 h-80 bg-white rounded-full shadow-2xl overflow-hidden border-8 border-amber-100">
                   <img
-                    src="https://images.unsplash.com/photo-1614797091849-05915639d85a"
-                    alt="Bonsai Tree"
+                    src={LaFamiliaDelBonsai1}
+                    alt="Bonsai Tree Bonania1"
                     className="w-full h-full object-cover"
                   />
                 </div>

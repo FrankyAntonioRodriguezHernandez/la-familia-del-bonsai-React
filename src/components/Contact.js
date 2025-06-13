@@ -36,7 +36,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-600">Teléfono</p>
-                    <p className="text-gray-800 font-semibold">+1 (555) 123-4567</p>
+                    <p className="text-gray-800 font-semibold">+53 53646319</p>
                   </div>
                 </div>
 
@@ -46,7 +46,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-gray-600">WhatsApp</p>
-                    <p className="text-gray-800 font-semibold">+1 (555) 123-4567</p>
+                    <p className="text-gray-800 font-semibold">+53 53646319</p>
                   </div>
                 </div>
 
@@ -67,8 +67,8 @@ const Contact = () => {
                   <div>
                     <p className="text-gray-600">Dirección</p>
                     <p className="text-gray-800 font-semibold">
-                      Calle del Bonsai 123<br />
-                      Ciudad Jardín, Estado 12345
+                      Abrahan Delgado #60 / Libertad y Máximo Gómez<br />
+                      Ciego de Ávila, Cuba
                     </p>
                   </div>
                 </div>
@@ -80,7 +80,7 @@ const Contact = () => {
                   Síguenos
                 </h4>
                 <div className="flex space-x-4">
-                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
+                  <a href="https://www.instagram.com/la_familia_del_bonsai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
                     <FaInstagram className="h-5 w-5" />
                   </a>
                   <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
@@ -89,7 +89,7 @@ const Contact = () => {
                   <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
                     <FaTwitter className="h-5 w-5" />
                   </a>
-                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
+                  <a href="https://whatsapp.com/channel/0029VaHjEYjA89Mrmf2zPv2K" className="bg-emerald-600 hover:bg-emerald-700 text-white p-3 rounded-full transition-colors duration-300">
                     <FaWhatsapp className="h-5 w-5" />
                   </a>
                 </div>
