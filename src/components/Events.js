@@ -35,7 +35,6 @@ const Events = () => {
 
   return (
     <section id="eventos" className="py-12 md:py-16 bg-gradient-to-b from-green-50 to-amber-50 relative overflow-hidden">
-      {/* Organic background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/4 w-48 md:w-64 h-48 md:h-64 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
         <div className="absolute bottom-0 right-1/4 w-40 md:w-56 h-40 md:h-56 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
@@ -51,7 +50,6 @@ const Events = () => {
         <div className="relative">
           <div className="bg-white rounded-xl lg:rounded-2xl shadow-lg lg:shadow-xl overflow-hidden">
             <div className="flex flex-col lg:flex-row">
-              {/* Image Section - Tamaño medio */}
               <div className="relative w-full lg:w-1/2 h-64 md:h-80 lg:h-96">
                 <img
                   src={events[currentSlide].image}
@@ -63,7 +61,6 @@ const Events = () => {
                 </div>
               </div>
 
-              {/* Content Section - Espaciado equilibrado */}
               <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center lg:w-1/2">
                 <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   {events[currentSlide].title}
@@ -78,7 +75,6 @@ const Events = () => {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
             className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md transition-all duration-300 z-10"
@@ -92,7 +88,6 @@ const Events = () => {
             <ChevronRightIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
           </button>
 
-          {/* Slide Indicators */}
           <div className="flex justify-center mt-6 space-x-2">
             {events.map((_, index) => (
               <button
