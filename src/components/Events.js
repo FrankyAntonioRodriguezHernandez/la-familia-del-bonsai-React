@@ -49,16 +49,15 @@ const Events = () => {
         </div>
 
         <div className="relative">
-          <div className="bg-white rounded-3xl shadow-2xl overflow-hidden">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-0">
-              {/* Image Section */}
-              <div className="relative h-96 lg:h-auto">
+          <div className="bg-white rounded-xl md:rounded-3xl shadow-lg md:shadow-2xl overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              <div className="relative w-full lg:w-1/2 aspect-video lg:aspect-auto lg:h-[400px] xl:h-[500px]">
                 <img
                   src={events[currentSlide].image}
                   alt={events[currentSlide].title}
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-xs md:text-sm">
                   {currentSlide + 1} / {events.length}
                 </div>
               </div>
