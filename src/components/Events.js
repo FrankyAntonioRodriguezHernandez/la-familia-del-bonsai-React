@@ -34,25 +34,25 @@ const Events = () => {
   };
 
   return (
-    <section id="eventos" className="min-h-screen lg:min-h-0 py-12 md:py-20 bg-gradient-to-b from-green-50 to-amber-50 relative overflow-hidden">
+    <section id="eventos" className="py-12 md:py-16 bg-gradient-to-b from-green-50 to-amber-50 relative overflow-hidden">
       {/* Organic background shapes */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-0 left-1/4 w-48 md:w-72 h-48 md:h-72 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
-        <div className="absolute bottom-0 right-1/4 w-40 md:w-64 h-40 md:h-64 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute top-0 left-1/4 w-48 md:w-64 h-48 md:h-64 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-40 md:w-56 h-40 md:h-56 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
       </div>
 
-      <div className="relative z-10 h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col">
-        <div className="text-center mb-8 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             EVENTOS
           </h2>
         </div>
 
-        <div className="relative flex-grow flex flex-col">
-          <div className="bg-white rounded-xl md:rounded-3xl shadow-lg md:shadow-2xl overflow-hidden flex-grow flex flex-col">
-            <div className="flex flex-col lg:flex-row flex-grow">
-              {/* Image Section - Altura controlada en móvil */}
-              <div className="relative w-full lg:w-1/2 h-48 sm:h-64 md:h-72 lg:h-full">
+        <div className="relative">
+          <div className="bg-white rounded-xl lg:rounded-2xl shadow-lg lg:shadow-xl overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              {/* Image Section - Tamaño medio */}
+              <div className="relative w-full lg:w-1/2 h-64 md:h-80 lg:h-96">
                 <img
                   src={events[currentSlide].image}
                   alt={events[currentSlide].title}
@@ -63,37 +63,37 @@ const Events = () => {
                 </div>
               </div>
 
-              {/* Content Section - Ocupa el espacio restante */}
-              <div className="p-6 md:p-8 lg:p-10 xl:p-12 flex flex-col justify-center lg:w-1/2 flex-grow">
-                <h3 className="text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold text-gray-800 mb-4 md:mb-6">
+              {/* Content Section - Espaciado equilibrado */}
+              <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center lg:w-1/2">
+                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                   {events[currentSlide].title}
                 </h3>
-                <p className="text-base md:text-lg text-gray-600 mb-6 md:mb-8 leading-relaxed">
+                <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
                   {events[currentSlide].description}
                 </p>
-                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 md:px-8 md:py-3 rounded-full text-base md:text-lg font-semibold transition-colors duration-300 shadow-md md:shadow-lg w-fit">
+                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 md:px-8 md:py-3 rounded-full text-base md:text-lg font-semibold transition-colors duration-300 shadow-md w-fit">
                   {events[currentSlide].buttonText}
                 </button>
               </div>
             </div>
           </div>
 
-          {/* Navigation Arrows - Posición ajustada */}
+          {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-300 z-10"
+            className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md transition-all duration-300 z-10"
           >
             <ChevronLeftIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-300 z-10"
+            className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md transition-all duration-300 z-10"
           >
             <ChevronRightIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
           </button>
 
-          {/* Slide Indicators - Posición ajustada */}
-          <div className="flex justify-center mt-4 md:mt-8 space-x-2">
+          {/* Slide Indicators */}
+          <div className="flex justify-center mt-6 space-x-2">
             {events.map((_, index) => (
               <button
                 key={index}
