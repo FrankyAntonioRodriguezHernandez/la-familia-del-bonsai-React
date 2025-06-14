@@ -89,13 +89,12 @@ const Events = () => {
             <ChevronRightIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
           </button>
 
-          {/* Slide Indicators */}
-          <div className="flex justify-center mt-8 space-x-2">
+          <div className="flex justify-center mt-6 md:mt-8 space-x-2">
             {events.map((_, index) => (
               <button
                 key={index}
                 onClick={() => setCurrentSlide(index)}
-                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                   index === currentSlide ? 'bg-emerald-600' : 'bg-gray-300'
                 }`}
               />
