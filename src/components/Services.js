@@ -1,7 +1,7 @@
 import React from 'react';
-import Poda1 from '../assets/Poda1.jpg'
-import Arrendamiento1 from '../assets/Arrendamiento1.jpg'
-import Decoracion1 from '../assets/Decoracion1.jpg'
+import Poda1 from '../assets/Services/Poda1.jpg'
+import Arrendamiento1 from '../assets/Services/Arrendamiento1.jpg'
+import Decoracion1 from '../assets/Services/Decoracion1.jpg'
 
 const Services = () => {
   const services = [

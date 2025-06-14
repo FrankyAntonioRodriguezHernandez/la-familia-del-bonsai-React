@@ -1,7 +1,7 @@
 import React from 'react';
-import zen1 from '../assets/zen1.jpg'
-import Bounganvilleas1 from '../assets/Bounganvilleas1.jpg'
-import ExpoVenta1 from '../assets/ExpoVenta1.jpg'
+import zen1 from '../assets/Information/zen1.jpg'
+import Bounganvilleas1 from '../assets/Information/Bounganvilleas1.jpg'
+import ExpoVenta1 from '../assets/Information/ExpoVenta1.jpg'
 
 
 const Information = () => {

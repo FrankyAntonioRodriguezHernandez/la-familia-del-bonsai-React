@@ -1,5 +1,5 @@
 import React from 'react';
-import LaFamiliaDelBonsai1 from '../assets/LaFamiliaDelBonsai1.jpg';
+import LaFamiliaDelBonsai1 from '../assets/Hero/BonsaiTreeBonania1.jpg';
 
 const Hero = () => {
   return (
