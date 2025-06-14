@@ -76,18 +76,17 @@ const Events = () => {
             </div>
           </div>
 
-          {/* Navigation Arrows */}
           <button
             onClick={prevSlide}
-            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-300 z-10"
+            className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-300 z-10"
           >
-            <ChevronLeftIcon className="h-6 w-6 text-gray-800" />
+            <ChevronLeftIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
           </button>
           <button
             onClick={nextSlide}
-            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-3 shadow-lg transition-all duration-300 z-10"
+            className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md md:shadow-lg transition-all duration-300 z-10"
           >
-            <ChevronRightIcon className="h-6 w-6 text-gray-800" />
+            <ChevronRightIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
           </button>
 
           {/* Slide Indicators */}
