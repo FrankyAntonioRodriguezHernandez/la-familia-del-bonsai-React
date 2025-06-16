@@ -5,7 +5,6 @@ import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 const Contact = () => {
   return (
     <section id="contacto" className="py-20 bg-gradient-to-b from-green-50 to-gray-800 relative overflow-hidden">
-      {/* Organic background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-0 left-1/3 w-96 h-96 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
         <div className="absolute bottom-0 right-1/3 w-80 h-80 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
@@ -22,7 +21,6 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Information */}
           <div className="space-y-8">
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">
@@ -74,7 +72,6 @@ const Contact = () => {
                 </div>
               </div>
 
-              {/* Social Media */}
               <div className="mt-8 pt-8 border-t border-gray-200">
                 <h4 className="text-lg font-semibold text-gray-800 mb-4">
                   Síguenos
@@ -99,7 +96,6 @@ const Contact = () => {
 
           <div className="space-y-8">
 
-            {/* Contact Form */}
             <div className="bg-white rounded-2xl shadow-xl p-8">
               <h3 className="text-2xl font-bold text-gray-800 mb-6">
                 Envíanos un Mensaje
@@ -154,7 +150,6 @@ const Contact = () => {
         </div>
       </div>
 
-      {/* Footer */}
       <div className="mt-20 pt-8 border-t border-gray-700">
         <div className="text-center text-gray-400">
           <p>&copy; 2024 La Familia del Bonsai. Todos los derechos reservados.</p>
