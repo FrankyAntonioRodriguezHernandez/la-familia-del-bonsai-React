@@ -97,18 +97,7 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Map and Form */}
           <div className="space-y-8">
-            {/* Map Placeholder */}
-            <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
-              <div className="h-64 bg-gradient-to-br from-emerald-100 to-green-200 flex items-center justify-center">
-                <div className="text-center text-gray-600">
-                  <MapPinIcon className="h-16 w-16 mx-auto mb-4 text-emerald-600" />
-                  <p className="text-lg font-semibold">Mapa de Ubicación</p>
-                  <p className="text-sm">Integración con Google Maps</p>
-                </div>
-              </div>
-            </div>
 
             {/* Contact Form */}
             <div className="bg-white rounded-2xl shadow-xl p-8">
