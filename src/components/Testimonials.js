@@ -64,37 +64,27 @@ const Testimonials = () => {
       </div>
     )
   };
-  
-  const containerStyles = {
-    padding: '0 20px',
-    maxWidth: '600px', 
-    margin: '0 auto',
-    width: '100%'
-  }
-
-  const imageStyles = {
-    width: '100%',
-    height: 'auto',
-    maxWidth: '300px', 
-    margin: '0 auto', 
-    borderRadius: '50%',
-    display: 'block'
-  }
 
   return(
-    <div className="py-12 bg-gray-50">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">Testimonios de Clientes</h2>
+    <div className="py-16 md:py-20 bg-gradient-to-b from-yellow-50 to-white-800 relative overflow-hidden">
+      {/* Organic background shapes - igual que en el componente de contacto */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-1/3 w-72 h-72 md:w-96 md:h-96 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/3 w-64 h-64 md:w-80 md:h-80 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
+      </div>
+
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">Testimonios de Clientes</h2>
         <div className="relative">
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className="px-4">
-                <div className="bg-white p-8 rounded-lg shadow-md text-center h-full">
+                <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center h-full">
                   <div className="flex justify-center mb-4">
                     <img 
                       src={testimonial.avatar} 
                       alt={testimonial.name} 
-                      className="w-20 h-20 rounded-full object-cover border-4 border-white shadow"
+                      className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-white shadow"
                     />
                   </div>
                   <StarRating rating={testimonial.rating} />
