@@ -21,7 +21,6 @@ const Contact = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
-          {/* Columna de Información - Ahora con altura igualada */}
           <div className="flex flex-col h-full">
             <div className="bg-white rounded-xl md:rounded-2xl shadow-lg md:shadow-xl p-6 md:p-8 flex-grow">
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">
@@ -95,7 +94,6 @@ const Contact = () => {
             </div>
           </div>
 
-          {/* Columna del Formulario - Ajustado para igualar altura */}
           <div className="flex flex-col h-full">
             <div className="bg-white rounded-xl md:rounded-2xl shadow-lg md:shadow-xl p-6 md:p-8 flex-grow">
               <h3 className="text-xl md:text-2xl font-bold text-gray-800 mb-4 md:mb-6">
