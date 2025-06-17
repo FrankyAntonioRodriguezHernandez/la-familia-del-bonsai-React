@@ -1,20 +1,31 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
   const navItems = [
     { name: 'INICIO', href: '#inicio', isAnchor: true },
     { name: 'INFORMACIÓN', href: '#informacion', isAnchor: true },
-    { name: 'SERVICIOS', href: '/servicios-completos', isAnchor: false }, // Cambiado a ruta
+    { name: 'SERVICIOS', href: '/services', isAnchor: false },
     { name: 'EVENTOS', href: '#eventos', isAnchor: true },
     { name: 'CONTACTO', href: '#contacto', isAnchor: true }
   ];
 
-  const handleNavigation = (isAnchor) => {
-    if (!isAnchor) {
+  const handleNavigation = (item) => {
+    if (!item.isAnchor) {
+      setIsMenuOpen(false);
+      return;
+    }
+
+    // Si estamos en otra página que no sea la principal (/)
+    if (location.pathname !== '/') {
+      // Navegar a la página principal con el hash
+      window.location.href = `/${item.href}`;
+    } else {
+      // Comportamiento normal de anchor
       setIsMenuOpen(false);
     }
   };
@@ -32,6 +43,12 @@ const Header = () => {
                     key={item.name}
                     href={item.href}
                     className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                    onClick={(e) => {
+                      if (location.pathname !== '/') {
+                        e.preventDefault();
+                        window.location.href = `/${item.href}`;
+                      }
+                    }}
                   >
                     {item.name}
                   </a>
@@ -74,7 +91,12 @@ const Header = () => {
                   key={item.name}
                   href={item.href}
                   className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-                  onClick={() => setIsMenuOpen(false)}
+                  onClick={(e) => {
+                    handleNavigation(item);
+                    if (location.pathname !== '/') {
+                      e.preventDefault();
+                    }
+                  }}
                 >
                   {item.name}
                 </a>
@@ -83,7 +105,7 @@ const Header = () => {
                   key={item.name}
                   to={item.href}
                   className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-                  onClick={() => handleNavigation(item.isAnchor)}
+                  onClick={() => handleNavigation(item)}
                 >
                   {item.name}
                 </Link>
