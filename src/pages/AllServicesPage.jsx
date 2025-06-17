@@ -33,6 +33,13 @@ const AllServicesPage = () => {
       image: Decoracion1,
       buttonText: "Ver detalles",
       path: "/cuidado-avanzado"
+    },
+    {
+      title: "Talleres de iniciación",
+      description: "Aprende las técnicas básicas del arte del bonsai",
+      image: Poda1, 
+      buttonText: "Ver detalles",
+      path: "/talleres"
     }
   ];
 
