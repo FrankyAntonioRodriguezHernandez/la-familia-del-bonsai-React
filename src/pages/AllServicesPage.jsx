@@ -12,6 +12,13 @@ const AllServicesPage = () => {
       image: Poda1,
       buttonText: "Ver detalles",
       path: "/poda"
+    },
+    {
+      title: "Arrendamiento de bonsai",
+      description: "Le ofrecemos la oportunidad de tener un bonsai como experiencia para eventos especiales",
+      image: Arrendamiento1,
+      buttonText: "Ver detalles",
+      path: "/arrendamiento"
     }
   ];
 
