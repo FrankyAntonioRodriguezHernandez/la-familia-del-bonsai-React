@@ -7,113 +7,93 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'INICIO', href: '#inicio', isAnchor: true },
-    { name: 'INFORMACIÓN', href: '#informacion', isAnchor: true },
-    { name: 'SERVICIOS', href: '/services', isAnchor: false },
-    { name: 'EVENTOS', href: '#eventos', isAnchor: true },
-    { name: 'CONTACTO', href: '#contacto', isAnchor: true }
+    { name: 'INICIO', target: '#inicio' },
+    { name: 'INFORMACIÓN', target: '#informacion' },
+    { name: 'SERVICIOS', target: '/services', isRoute: true },
+    { name: 'EVENTOS', target: '#eventos' },
+    { name: 'CONTACTO', target: '#contacto' }
   ];
 
   const handleNavigation = (item) => {
-    if (!item.isAnchor) {
-      setIsMenuOpen(false);
-      return;
+    if (item.isRoute && location.pathname === '/services') {
+      // Si ya estamos en services, hacer scroll al inicio
+      window.scrollTo({ top: 0, behavior: 'smooth' });
     }
-
-    // Si estamos en otra página que no sea la principal (/)
-    if (location.pathname !== '/') {
-      // Navegar a la página principal con el hash
-      window.location.href = `/${item.href}`;
-    } else {
-      // Comportamiento normal de anchor
-      setIsMenuOpen(false);
-    }
+    setIsMenuOpen(false);
   };
 
   return (
-    <nav className="bg-gray-800 bg-opacity-90 backdrop-blur-sm fixed w-full z-50 top-0">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
-          {/* Desktop Navigation */}
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item) => (
-                item.isAnchor ? (
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                    onClick={(e) => {
-                      if (location.pathname !== '/') {
-                        e.preventDefault();
-                        window.location.href = `/${item.href}`;
-                      }
-                    }}
-                  >
-                    {item.name}
-                  </a>
-                ) : (
-                  <Link
-                    key={item.name}
-                    to={item.href}
-                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                  >
-                    {item.name}
-                  </Link>
-                )
-              ))}
-            </div>
-          </div>
-
-          {/* Mobile menu button */}
-          <div className="md:hidden">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-            >
-              {isMenuOpen ? (
-                <XMarkIcon className="block h-6 w-6" />
-              ) : (
-                <Bars3Icon className="block h-6 w-6" />
-              )}
-            </button>
-          </div>
-        </div>
-      </div>
-
-      {/* Mobile Navigation */}
-      {isMenuOpen && (
-        <div className="md:hidden">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800">
+    <nav className="fixed w-full z-50 top-4 flex justify-center">
+      {/* Contenedor centrado con fondo semitransparente */}
+      <div className="bg-gray-800 bg-opacity-90 backdrop-blur-sm rounded-full shadow-xl border border-gray-700">
+        <div className="max-w-max mx-auto px-6 py-2">
+          {/* Versión desktop */}
+          <div className="hidden md:flex space-x-1">
             {navItems.map((item) => (
-              item.isAnchor ? (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-                  onClick={(e) => {
-                    handleNavigation(item);
-                    if (location.pathname !== '/') {
-                      e.preventDefault();
-                    }
-                  }}
-                >
-                  {item.name}
-                </a>
-              ) : (
+              item.isRoute ? (
                 <Link
                   key={item.name}
-                  to={item.href}
-                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+                  to={item.target}
+                  className="text-gray-300 hover:text-white px-5 py-2 rounded-full text-sm font-medium transition-colors duration-300"
                   onClick={() => handleNavigation(item)}
                 >
                   {item.name}
                 </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.target}
+                  className="text-gray-300 hover:text-white px-5 py-2 rounded-full text-sm font-medium transition-colors duration-300"
+                  onClick={() => handleNavigation(item)}
+                >
+                  {item.name}
+                </a>
               )
             ))}
           </div>
+
+          {/* Versión móvil */}
+          <div className="md:hidden flex justify-center">
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-gray-300 hover:text-white p-2 rounded-full"
+            >
+              {isMenuOpen ? (
+                <XMarkIcon className="h-6 w-6" />
+              ) : (
+                <Bars3Icon className="h-6 w-6" />
+              )}
+            </button>
+          </div>
         </div>
-      )}
+
+        {/* Menú móvil desplegable */}
+        {isMenuOpen && (
+          <div className="md:hidden absolute top-14 left-1/2 transform -translate-x-1/2 bg-gray-800 rounded-lg shadow-lg py-2 w-48">
+            {navItems.map((item) => (
+              item.isRoute ? (
+                <Link
+                  key={item.name}
+                  to={item.target}
+                  className="block text-gray-300 hover:text-white px-4 py-2 text-sm font-medium"
+                  onClick={() => handleNavigation(item)}
+                >
+                  {item.name}
+                </Link>
+              ) : (
+                <a
+                  key={item.name}
+                  href={item.target}
+                  className="block text-gray-300 hover:text-white px-4 py-2 text-sm font-medium"
+                  onClick={() => handleNavigation(item)}
+                >
+                  {item.name}
+                </a>
+              )
+            ))}
+          </div>
+        )}
+      </div>
     </nav>
   );
 };
