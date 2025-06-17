@@ -40,6 +40,13 @@ const AllServicesPage = () => {
       image: Poda1, 
       buttonText: "Ver detalles",
       path: "/talleres"
+    },
+    {
+      title: "Venta de bonsai",
+      description: "Selección de bonsais cuidadosamente cultivados",
+      image: Arrendamiento1, 
+      buttonText: "Ver detalles",
+      path: "/venta"
     }
   ];
 
