@@ -26,6 +26,13 @@ const AllServicesPage = () => {
       image: Decoracion1,
       buttonText: "Ver detalles",
       path: "/decoracion"
+    },
+    {
+      title: "Cuidado avanzado de bonsai",
+      description: "Servicio especializado para el mantenimiento de bonsais antiguos",
+      image: Decoracion1,
+      buttonText: "Ver detalles",
+      path: "/cuidado-avanzado"
     }
   ];
 
