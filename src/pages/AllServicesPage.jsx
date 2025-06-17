@@ -50,6 +50,15 @@ const AllServicesPage = () => {
     }
   ];
 
+  return (
+    <section id="todos-servicios" className="py-20 bg-gradient-to-b from-amber-50 to-green-50 min-h-screen">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-40 left-20 w-96 h-96 bg-emerald-200 rounded-full opacity-10 transform rotate-12"></div>
+        <div className="absolute bottom-40 right-20 w-80 h-80 bg-amber-200 rounded-full opacity-10 transform -rotate-12"></div>
+      </div>
+
+    </section>
+  );
 };
 
 export default AllServicesPage;
