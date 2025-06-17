@@ -8,7 +8,8 @@ import Services from './components/Services';
 import Events from './components/Events';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
-import ServicesFull from './components/ServicesFull'; // Nuevo componente
+import ServicesFull from './components/ServicesFull';
+import ScrollToTop from './components/ScrollToTop'; 
 
 function Home() {
   return (
@@ -28,6 +29,7 @@ function App() {
     <Router>
       <div className="App">
         <Header />
+        <ScrollToTop /> 
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesFull />} />
