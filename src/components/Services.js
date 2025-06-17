@@ -1,29 +1,23 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import ServiceCard from './ServiceCard'; // Asumiendo que lo has creado
+import ServiceCard from './ServiceCard';
 
 const Services = () => {
   const featuredServices = [
     {
       title: "Poda y técnica de bonsai",
       description: "Más que una creación, una experiencia que se alimenta de naturaleza",
-      image: require('../assets/Services/Poda1.jpg'),
-      path: "/poda",
-      buttonText: "Ver"
+      image: require('../assets/Services/Poda1.jpg')
     },
     {
       title: "Arrendamiento de bonsai",
       description: "Le ofrecemos la oportunidad de tener un bonsai como experiencia para eventos especiales",
-      image: require('../assets/Services/Arrendamiento1.jpg'),
-      path: "/arrendamiento",
-      buttonText: "Ver"
+      image: require('../assets/Services/Arrendamiento1.jpg')
     },
     {
       title: "Decoración de eventos",
       description: "Transformamos su evento en una experiencia única, integrando elegancia y armonía",
-      image: require('../assets/Services/Decoracion1.jpg'),
-      path: "/decoracion",
-      buttonText: "Ver"
+      image: require('../assets/Services/Decoracion1.jpg')
     }
   ];
 
