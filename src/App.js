@@ -13,12 +13,12 @@ import ServicesFull from './components/ServicesFull'; // Nuevo componente
 function Home() {
   return (
     <>
-      <Hero />
-      <Information />
-      <Services />
-      <Events />
+      <Hero id="inicio" />
+      <Information id="informacion" />
+      <Services id="servicios" />
+      <Events id="eventos" />
       <Testimonials />
-      <Contact />
+      <Contact id="contacto" />
     </>
   );
 }
