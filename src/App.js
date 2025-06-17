@@ -1,4 +1,5 @@
 import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Header from './components/Header';
 import Hero from './components/Hero';
@@ -7,18 +8,32 @@ import Services from './components/Services';
 import Events from './components/Events';
 import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
+import ServicesFull from './components/ServicesFull'; // Nuevo componente
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <Header />
+    <>
       <Hero />
       <Information />
       <Services />
       <Events />
       <Testimonials />
       <Contact />
-    </div>
+    </>
+  );
+}
+
+function App() {
+  return (
+    <Router>
+      <div className="App">
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/servicios-completos" element={<ServicesFull />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

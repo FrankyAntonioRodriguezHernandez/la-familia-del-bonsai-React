@@ -1,16 +1,23 @@
 import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const navItems = [
-    { name: 'INICIO', href: '#inicio' },
-    { name: 'INFORMACIÓN', href: '#informacion' },
-    { name: 'SERVICIOS', href: '#servicios' },
-    { name: 'EVENTOS', href: '#eventos' },
-    { name: 'CONTACTO', href: '#contacto' }
+    { name: 'INICIO', href: '#inicio', isAnchor: true },
+    { name: 'INFORMACIÓN', href: '#informacion', isAnchor: true },
+    { name: 'SERVICIOS', href: '/servicios-completos', isAnchor: false }, // Cambiado a ruta
+    { name: 'EVENTOS', href: '#eventos', isAnchor: true },
+    { name: 'CONTACTO', href: '#contacto', isAnchor: true }
   ];
+
+  const handleNavigation = (isAnchor) => {
+    if (!isAnchor) {
+      setIsMenuOpen(false);
+    }
+  };
 
   return (
     <nav className="bg-gray-800 bg-opacity-90 backdrop-blur-sm fixed w-full z-50 top-0">
@@ -20,13 +27,23 @@ const Header = () => {
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-8">
               {navItems.map((item) => (
-                <a
-                  key={item.name}
-                  href={item.href}
-                  className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
-                >
-                  {item.name}
-                </a>
+                item.isAnchor ? (
+                  <a
+                    key={item.name}
+                    href={item.href}
+                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                  >
+                    {item.name}
+                  </a>
+                ) : (
+                  <Link
+                    key={item.name}
+                    to={item.href}
+                    className="text-gray-300 hover:text-white px-3 py-2 rounded-md text-sm font-medium transition-colors duration-300"
+                  >
+                    {item.name}
+                  </Link>
+                )
               ))}
             </div>
           </div>
@@ -52,14 +69,25 @@ const Header = () => {
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800">
             {navItems.map((item) => (
-              <a
-                key={item.name}
-                href={item.href}
-                className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
-                onClick={() => setIsMenuOpen(false)}
-              >
-                {item.name}
-              </a>
+              item.isAnchor ? (
+                <a
+                  key={item.name}
+                  href={item.href}
+                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+                  onClick={() => setIsMenuOpen(false)}
+                >
+                  {item.name}
+                </a>
+              ) : (
+                <Link
+                  key={item.name}
+                  to={item.href}
+                  className="text-gray-300 hover:text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-300"
+                  onClick={() => handleNavigation(item.isAnchor)}
+                >
+                  {item.name}
+                </Link>
+              )
             ))}
           </div>
         </div>
