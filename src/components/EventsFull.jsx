@@ -59,6 +59,57 @@ const EventsFull = () => {
             Descubre nuestra agenda completa de actividades y talleres
           </p>
         </div>
+
+        <div className="relative">
+          <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
+            <div className="flex flex-col lg:flex-row">
+              <div className="relative w-full lg:w-1/2 h-80 lg:h-96">
+                <img
+                  src={allEvents[currentSlide].image}
+                  alt={allEvents[currentSlide].title}
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-sm">
+                  {currentSlide + 1} / {allEvents.length}
+                </div>
+              </div>
+
+              <div className="p-8 lg:p-10 flex flex-col justify-center lg:w-1/2">
+                <h3 className="text-3xl font-bold text-gray-800 mb-4">
+                  {allEvents[currentSlide].title}
+                </h3>
+                <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+                  {allEvents[currentSlide].description}
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            onClick={prevSlide}
+            className="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-3 shadow-md transition-all duration-300 z-10"
+          >
+            <ChevronLeftIcon className="h-6 w-6 text-gray-800" />
+          </button>
+          <button
+            onClick={nextSlide}
+            className="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-3 shadow-md transition-all duration-300 z-10"
+          >
+            <ChevronRightIcon className="h-6 w-6 text-gray-800" />
+          </button>
+
+          <div className="flex justify-center mt-8 space-x-2">
+            {allEvents.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => setCurrentSlide(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  index === currentSlide ? 'bg-emerald-600' : 'bg-gray-300'
+                }`}
+              />
+            ))}
+          </div>
+        </div>
       </div>
     </section>
   );
