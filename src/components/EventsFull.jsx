@@ -43,6 +43,15 @@ const EventsFull = () => {
     setCurrentSlide((prev) => (prev - 1 + allEvents.length) % allEvents.length);
   };
 
+  return (
+    <section className="py-20 bg-gradient-to-b from-green-50 to-amber-50 min-h-screen relative overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-0 left-1/4 w-64 h-64 bg-emerald-200 rounded-full opacity-10 animate-pulse"></div>
+        <div className="absolute bottom-0 right-1/4 w-56 h-56 bg-amber-200 rounded-full opacity-10 animate-pulse"></div>
+      </div>
+
+    </section>
+  );
 };
 
 export default EventsFull;
