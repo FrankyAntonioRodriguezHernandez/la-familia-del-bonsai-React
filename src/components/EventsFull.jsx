@@ -23,18 +23,26 @@ const EventsFull = () => {
       description: "Guiamos a través de las estaciones, revelando el momento ideal para cada paso en el arte del bonsai, asegurando su crecimiento armonioso y saludable.",
       image: MejorMomento1
     },
-    // Agrega aquí TODOS tus eventos adicionales
     {
       title: "Convención Anual",
       description: "El evento más importante del año donde reunimos a los mejores expertos en bonsai del país.",
-      image: Exposicion1 // Cambia por imagen real
+      image: Exposicion1 
     },
     {
       title: "Técnicas Avanzadas",
       description: "Talleres exclusivos para quienes desean llevar su arte del bonsai al siguiente nivel.",
-      image: Taller1 // Cambia por imagen real
+      image: Taller1 
     }
   ];
+
+  const nextSlide = () => {
+    setCurrentSlide((prev) => (prev + 1) % allEvents.length);
+  };
+
+  const prevSlide = () => {
+    setCurrentSlide((prev) => (prev - 1 + allEvents.length) % allEvents.length);
+  };
+
 };
 
 export default EventsFull;
