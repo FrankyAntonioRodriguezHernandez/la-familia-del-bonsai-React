@@ -10,8 +10,9 @@ const Header = () => {
     { name: 'INICIO', target: '#inicio' },
     { name: 'INFORMACIÓN', target: '#informacion' },
     { name: 'SERVICIOS', target: '/services', isRoute: true },
-    { name: 'EVENTOS', target: '#eventos' },
+    { name: 'EVENTOS', target: '/events', isRoute: true },
     { name: 'CONTACTO', target: '#contacto' }
+    
   ];
 
   const handleNavigation = (item) => {
