@@ -10,6 +10,7 @@ import Testimonials from './components/Testimonials';
 import Contact from './components/Contact';
 import ServicesFull from './components/ServicesFull';
 import ScrollToTop from './components/ScrollToTop'; 
+import EventsFull from './components/EventsFull';
 
 function Home() {
   return (
