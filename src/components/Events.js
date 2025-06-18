@@ -1,8 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
-import Taller1 from '../assets/Events/Taller1.jpg'
-import Exposicion1 from '../assets/Events/Exposicion1.jpg'
-import MejorMomento1 from '../assets/Events/MejorMomento1.jpg'
+import { Link } from 'react-router-dom';
+import Taller1 from '../assets/Events/Taller1.jpg';
+import Exposicion1 from '../assets/Events/Exposicion1.jpg';
+import MejorMomento1 from '../assets/Events/MejorMomento1.jpg';
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -11,20 +12,17 @@ const Events = () => {
     {
       title: "Exposiciones de Arte",
       description: "Celebramos la belleza del bonsai en exposiciones que muestran la armonía entre naturaleza y técnica artística tradicional.",
-      image: Exposicion1,
-      buttonText: "Ver"
+      image: Exposicion1
     },
     {
       title: "Talleres Especializados",
       description: "Eventos educativos donde compartimos técnicas milenarias y modernas para el cuidado perfecto de sus bonsai en cada estación del año.",
-      image: Taller1,
-      buttonText: "Ver"
+      image: Taller1
     },
     {
       title: "Mejores Momentos",
       description: "Guiamos a través de las estaciones, revelando el momento ideal para cada paso en el arte del bonsai, asegurando su crecimiento armonioso y saludable.",
-      image: MejorMomento1,
-      buttonText: "Ver"
+      image: MejorMomento1
     },
   ];
 
@@ -46,8 +44,9 @@ const Events = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
-            EVENTOS
+            EVENTOS DESTACADOS
           </h2>
+          <p className="text-lg text-gray-600">Algunos de nuestros próximos eventos</p>
         </div>
 
         <div className="relative">
@@ -71,9 +70,12 @@ const Events = () => {
                 <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
                   {events[currentSlide].description}
                 </p>
-                <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-2 md:px-8 md:py-3 rounded-full text-base md:text-lg font-semibold transition-colors duration-300 shadow-md w-fit">
-                  {events[currentSlide].buttonText}
-                </button>
+                <Link 
+                  to="/events" 
+                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-md inline-block text-center"
+                >
+                  Ver todos los eventos
+                </Link>
               </div>
             </div>
           </div>
