@@ -18,10 +18,8 @@ const Header = () => {
   const handleNavigation = (item) => {
     if (item.isAnchor) {
       if (location.pathname !== '/') {
-        // Navegar directamente a la sección en home
         navigate('/', { state: { scrollTo: item.target } });
       } else {
-        // Si ya estamos en home, hacer scroll a la sección
         const element = document.getElementById(item.target);
         if (element) {
           element.scrollIntoView({ behavior: 'smooth' });
@@ -29,21 +27,34 @@ const Header = () => {
       }
     } else if (item.isRoute) {
       if (location.pathname === `/${item.target}`) {
-        // Si ya estamos en la ruta, hacer scroll al inicio
         window.scrollTo({ top: 0, behavior: 'smooth' });
       }
-      // Si es una ruta diferente, React Router se encargará
     }
     setIsMenuOpen(false);
   };
 
   return (
-    <nav className="fixed w-full z-50 top-4 flex justify-center">
-      <div className="bg-emerald-800 bg-opacity-90 backdrop-blur-sm rounded-full shadow-xl border border-gray-700">
-        <div className="max-w-max mx-auto px-6 py-2">
+    <nav className="fixed w-full z-50 top-4">
+      {/* Botón móvil arriba a la izquierda */}
+      <div className="md:hidden absolute top-0 left-0 p-4 z-50">
+        <button
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          className="text-gray-300 hover:text-white p-2 rounded-full bg-emerald-800 bg-opacity-90 backdrop-blur-sm shadow-md"
+        >
+          {isMenuOpen ? (
+            <XMarkIcon className="h-6 w-6" />
+          ) : (
+            <Bars3Icon className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+
+      {/* Fondo centralizado del header */}
+      <div className="flex justify-center">
+        <div className="bg-emerald-800 bg-opacity-90 backdrop-blur-sm rounded-full shadow-xl border border-gray-700 px-6 py-2">
           {/* Versión desktop */}
           <div className="hidden md:flex space-x-1">
-            {navItems.map((item) => (
+            {navItems.map((item) =>
               item.isRoute ? (
                 <Link
                   key={item.name}
@@ -66,54 +77,40 @@ const Header = () => {
                   {item.name}
                 </a>
               )
-            ))}
-          </div>
-
-          {/* Versión móvil */}
-          <div className="md:hidden flex justify-center">
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-300 hover:text-white p-2 rounded-full"
-            >
-              {isMenuOpen ? (
-                <XMarkIcon className="h-6 w-6" />
-              ) : (
-                <Bars3Icon className="h-6 w-6" />
-              )}
-            </button>
+            )}
           </div>
         </div>
-
-        {/* Menú móvil desplegable */}
-        {isMenuOpen && (
-          <div className="md:hidden absolute top-14 left-1/2 transform -translate-x-1/2 bg-emerald-800 rounded-lg shadow-lg py-2 w-48">
-            {navItems.map((item) => (
-              item.isRoute ? (
-                <Link
-                  key={item.name}
-                  to={`/${item.target}`}
-                  className="block text-gray-300 hover:text-white px-4 py-2 text-sm font-medium"
-                  onClick={() => handleNavigation(item)}
-                >
-                  {item.name}
-                </Link>
-              ) : (
-                <a
-                  key={item.name}
-                  href={`#${item.target}`}
-                  className="block text-gray-300 hover:text-white px-4 py-2 text-sm font-medium"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    handleNavigation(item);
-                  }}
-                >
-                  {item.name}
-                </a>
-              )
-            ))}
-          </div>
-        )}
       </div>
+
+      {/* Menú móvil desplegable */}
+      {isMenuOpen && (
+        <div className="md:hidden absolute top-16 left-4 bg-emerald-800 rounded-lg shadow-lg py-2 w-48 z-40">
+          {navItems.map((item) =>
+            item.isRoute ? (
+              <Link
+                key={item.name}
+                to={`/${item.target}`}
+                className="block text-gray-300 hover:text-white px-4 py-2 text-sm font-medium"
+                onClick={() => handleNavigation(item)}
+              >
+                {item.name}
+              </Link>
+            ) : (
+              <a
+                key={item.name}
+                href={`#${item.target}`}
+                className="block text-gray-300 hover:text-white px-4 py-2 text-sm font-medium"
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleNavigation(item);
+                }}
+              >
+                {item.name}
+              </a>
+            )
+          )}
+        </div>
+      )}
     </nav>
   );
 };
