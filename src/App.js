@@ -11,6 +11,8 @@ import Contact from './components/Contact';
 import ServicesFull from './components/ServicesFull';
 import ScrollToTop from './components/ScrollToTop'; 
 import EventsFull from './components/EventsFull';
+import { useLocation } from 'react-router-dom';
+import { useEffect } from 'react';
 
 function App() {
   return (
@@ -29,6 +31,18 @@ function App() {
 }
 
 function Home() {
+  const location = useLocation();
+
+  useEffect(() => {
+    if (location.state?.scrollTo) {
+      const element = document.getElementById(location.state.scrollTo);
+      if (element) {
+        setTimeout(() => {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }, 100); // Pequeño delay para asegurar que el DOM esté listo
+      }
+    }
+  }, [location.state]);
   return (
     <>
       <Hero id="inicio" />
