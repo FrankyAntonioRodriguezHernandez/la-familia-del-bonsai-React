@@ -7,18 +7,24 @@ const Header = () => {
   const location = useLocation();
 
   const navItems = [
-    { name: 'INICIO', target: '#inicio' },
-    { name: 'INFORMACIÓN', target: '#informacion' },
+    { name: 'INICIO', target: '#inicio', isAnchor: true },
+    { name: 'INFORMACIÓN', target: '#informacion', isAnchor: true },
     { name: 'SERVICIOS', target: '/services', isRoute: true },
     { name: 'EVENTOS', target: '/events', isRoute: true },
-    { name: 'CONTACTO', target: '#contacto' }
-    
+    { name: 'CONTACTO', target: '#contacto', isAnchor: true }
   ];
 
   const handleNavigation = (item) => {
-    if (item.isRoute && location.pathname === '/services') {
-      // Si ya estamos en services, hacer scroll al inicio
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    if (location.pathname !== '/') {
+      // Si no estamos en la página principal
+      if (item.isAnchor) {
+        // Para anchors, redirigir a home con el hash
+        window.location.href = `/${item.target}`;
+      } else if (item.isRoute && location.pathname === item.target) {
+        // Si ya estamos en la ruta, hacer scroll al inicio
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      // Si es una ruta diferente, React Router se encargará
     }
     setIsMenuOpen(false);
   };
@@ -45,7 +51,10 @@ const Header = () => {
                   key={item.name}
                   href={item.target}
                   className="text-gray-300 hover:text-white px-5 py-2 rounded-full text-sm font-medium transition-colors duration-300"
-                  onClick={() => handleNavigation(item)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigation(item);
+                  }}
                 >
                   {item.name}
                 </a>
@@ -86,7 +95,10 @@ const Header = () => {
                   key={item.name}
                   href={item.target}
                   className="block text-gray-300 hover:text-white px-4 py-2 text-sm font-medium"
-                  onClick={() => handleNavigation(item)}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    handleNavigation(item);
+                  }}
                 >
                   {item.name}
                 </a>
