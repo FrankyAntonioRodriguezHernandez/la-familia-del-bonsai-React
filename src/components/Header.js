@@ -50,10 +50,10 @@ const Header = () => {
       </div>
 
       {/* Fondo centralizado del header */}
-      <div className="flex justify-center">
+      <div className="hidden md:flex justify-center">
         <div className="bg-emerald-800 bg-opacity-90 backdrop-blur-sm rounded-full shadow-xl border border-gray-700 px-6 py-2">
           {/* Versión desktop */}
-          <div className="hidden md:flex space-x-1">
+          <div className="flex space-x-1">
             {navItems.map((item) =>
               item.isRoute ? (
                 <Link
