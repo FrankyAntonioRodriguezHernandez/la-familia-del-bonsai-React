@@ -12,19 +12,6 @@ import ServicesFull from './components/ServicesFull';
 import ScrollToTop from './components/ScrollToTop'; 
 import EventsFull from './components/EventsFull';
 
-function Home() {
-  return (
-    <>
-      <Hero id="inicio" />
-      <Information id="informacion" />
-      <Services id="servicios" />
-      <Events id="eventos" />
-      <Testimonials />
-      <Contact id="contacto" />
-    </>
-  );
-}
-
 function App() {
   return (
     <Router>
@@ -40,5 +27,19 @@ function App() {
     </Router>
   );
 }
+
+function Home() {
+  return (
+    <>
+      <Hero id="inicio" />
+      <Information id="informacion" />
+      <Services id="servicios" />
+      <Events id="eventos" />
+      <Testimonials />
+      <Contact id="contacto" />
+    </>
+  );
+}
+
 
 export default App;
