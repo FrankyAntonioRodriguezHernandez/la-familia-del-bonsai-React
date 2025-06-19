@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <nav className="fixed w-full z-50 top-4 flex justify-center">
-      <div className="bg-gray-800 bg-opacity-90 backdrop-blur-sm rounded-full shadow-xl border border-gray-700">
+      <div className="bg-emerald-800 bg-opacity-90 backdrop-blur-sm rounded-full shadow-xl border border-gray-700">
         <div className="max-w-max mx-auto px-6 py-2">
           {/* Versión desktop */}
           <div className="hidden md:flex space-x-1">
@@ -86,7 +86,7 @@ const Header = () => {
 
         {/* Menú móvil desplegable */}
         {isMenuOpen && (
-          <div className="md:hidden absolute top-14 left-1/2 transform -translate-x-1/2 bg-gray-800 rounded-lg shadow-lg py-2 w-48">
+          <div className="md:hidden absolute top-14 left-1/2 transform -translate-x-1/2 bg-emerald-800 rounded-lg shadow-lg py-2 w-48">
             {navItems.map((item) => (
               item.isRoute ? (
                 <Link
