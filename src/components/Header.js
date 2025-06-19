@@ -114,7 +114,7 @@ const Header = () => {
 
       {/* Menú móvil desplegable */}
       {isMenuOpen && (
-        <div className="md:hidden absolute top-16 left-4 bg-emerald-800 rounded-lg shadow-lg py-2 w-48 z-40">
+        <div ref={menuRef} className="md:hidden absolute top-16 left-4 bg-emerald-800 rounded-lg shadow-lg py-2 w-48 z-40">
           {navItems.map((item) =>
             item.isRoute ? (
               <Link
