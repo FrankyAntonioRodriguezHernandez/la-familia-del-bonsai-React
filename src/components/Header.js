@@ -1,10 +1,11 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const navItems = [
     { name: 'INICIO', target: 'inicio', isAnchor: true },
@@ -14,36 +15,27 @@ const Header = () => {
     { name: 'CONTACTO', target: 'contacto', isAnchor: true }
   ];
 
-  const scrollToSection = (id) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
   const handleNavigation = (item) => {
     if (item.isAnchor) {
       if (location.pathname !== '/') {
-        // Si no estamos en la página principal, navegar a home primero
-        window.location.href = `/#${item.target}`;
+        // Navegar directamente a la sección en home
+        navigate('/', { state: { scrollTo: item.target } });
       } else {
         // Si ya estamos en home, hacer scroll a la sección
-        scrollToSection(item.target);
+        const element = document.getElementById(item.target);
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
       }
-    } else if (item.isRoute && location.pathname === `/${item.target}`) {
-      // Si ya estamos en la ruta, hacer scroll al inicio
-      window.scrollTo({ top: 0, behavior: 'smooth' });
+    } else if (item.isRoute) {
+      if (location.pathname === `/${item.target}`) {
+        // Si ya estamos en la ruta, hacer scroll al inicio
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      // Si es una ruta diferente, React Router se encargará
     }
     setIsMenuOpen(false);
   };
-
-  // Efecto para manejar anchors al cargar la página
-  useEffect(() => {
-    if (location.hash) {
-      const id = location.hash.replace('#', '');
-      scrollToSection(id);
-    }
-  }, [location]);
 
   return (
     <nav className="fixed w-full z-50 top-4 flex justify-center">
