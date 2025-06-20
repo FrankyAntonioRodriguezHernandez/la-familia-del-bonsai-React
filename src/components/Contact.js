@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12 md:mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mb-4 md:mb-6">
-            CONTACTO
+            CONTÁCTANOS
           </h2>
           <p className="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto">
             Estamos aquí para ayudarte a crear el espacio zen perfecto
@@ -65,8 +65,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm md:text-base text-gray-600">Dirección</p>
                     <p className="text-base md:text-lg text-gray-800 font-semibold">
-                      Abrahan Delgado #60 / Libertad y Máximo Gómez<br />
-                      Ciego de Ávila, Cuba
+                      Abrahan Delgado #60 / Libertad y Máximo Gómez. Ciego de Ávila, Cuba
                     </p>
                   </div>
                 </div>
