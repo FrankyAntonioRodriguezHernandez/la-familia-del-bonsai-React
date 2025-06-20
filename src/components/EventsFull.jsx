@@ -35,11 +35,11 @@ const allEvents = [
 const EventsFull = () => {
   return (
     <section className="py-20 bg-gradient-to-b from-green-50 to-amber-50 relative overflow-hidden">
-      {/* Fondo decorativo artístico */}
+      
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <div className="absolute top-[-80px] left-[20%] w-72 h-72 md:w-96 md:h-96 bg-emerald-300 rounded-full opacity-10 animate-pulse blur-3xl"></div>
-        <div className="absolute bottom-[-60px] right-[15%] w-64 h-64 md:w-80 md:h-80 bg-amber-300 rounded-full opacity-10 animate-pulse blur-3xl"></div>
-    </div>
+        <div className="absolute top-[-80px] left-[20%] w-72 h-72 md:w-96 md:h-96 bg-emerald-300 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-[-60px] right-[15%] w-64 h-64 md:w-80 md:h-80 bg-amber-300 rounded-full opacity-20 animate-pulse"></div>
+      </div>
 
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-[-100px] left-[-100px] w-96 h-96 bg-emerald-300 rounded-full opacity-10 blur-3xl"></div>
