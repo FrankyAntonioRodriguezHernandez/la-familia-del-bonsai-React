@@ -23,6 +23,12 @@ const Services = () => {
 
   return (
     <section id="servicios" className="py-20 bg-gradient-to-b from-amber-50 to-green-50 relative overflow-hidden">
+      
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute top-[-80px] left-[20%] w-72 h-72 md:w-96 md:h-96 bg-emerald-300 rounded-full opacity-20 animate-pulse"></div>
+        <div className="absolute bottom-[-60px] right-[15%] w-64 h-64 md:w-80 md:h-80 bg-amber-300 rounded-full opacity-20 animate-pulse"></div>
+      </div>
+
       {/* Organic background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-40 left-20 w-96 h-96 bg-emerald-200 rounded-full opacity-10 transform rotate-12"></div>
