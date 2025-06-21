@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { use } from 'react';
+import emailjs from '@emailjs/browser';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
 
 const Contact = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm(
+      'service_n4i9yol',    
+      'template_660hhea',   
+      form.current,
+      'UgQvsCh1B6qBMqnoW'      
+    ).then(
+      (result) => {
+        alert('Mensaje enviado con éxito 😄');
+        form.current.reset(); 
+      },
+      (error) => {
+        alert('Hubo un error, intenta de nuevo 😕');
+        console.log(error.text);
+      }
+    );
+  };
+
   return (
     <section id="contacto" className="py-16 md:py-20 bg-gradient-to-b from-green-50 to-gray-800 relative overflow-hidden">
       <div className="absolute inset-0 overflow-hidden">
