@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
-import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter } from 'react-icons/fa';
+import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa';
 
 const Contact = () => {
   const form = useRef();
@@ -99,18 +99,27 @@ const Contact = () => {
                   Síguenos
                 </h4>
                 <div className="flex space-x-3 md:space-x-4">
+                  <a href="https://whatsapp.com/channel/0029VaHjEYjA89Mrmf2zPv2K" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
+                    <FaWhatsapp className="h-4 w-4 md:h-5 md:w-5" />
+                  </a>
+
                   <a href="https://www.instagram.com/la_familia_del_bonsai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
                     <FaInstagram className="h-4 w-4 md:h-5 md:w-5" />
                   </a>
-                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
+
+                  <a href="https://t.me/Dreamcatchersboy" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
+                    <FaTelegram className="h-4 w-4 md:h-5 md:w-5" />
+                  </a>
+                  
+                  {/* 
+                    <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
                     <FaFacebook className="h-4 w-4 md:h-5 md:w-5" />
                   </a>
                   <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
                     <FaTwitter className="h-4 w-4 md:h-5 md:w-5" />
                   </a>
-                  <a href="https://whatsapp.com/channel/0029VaHjEYjA89Mrmf2zPv2K" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
-                    <FaWhatsapp className="h-4 w-4 md:h-5 md:w-5" />
-                  </a>
+                    */}
+                  
                 </div>
               </div>
             </div>
