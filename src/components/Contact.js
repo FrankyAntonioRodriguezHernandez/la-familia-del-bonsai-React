@@ -122,18 +122,18 @@ const Contact = () => {
                 Envíanos un Mensaje
               </h3>
               
-              <form className="space-y-4 md:space-y-6">
-                <div>
-                  <label htmlFor="name" className="block text-sm md:text-base font-medium text-gray-700 mb-1 md:mb-2">
-                    Nombre
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    className="w-full px-4 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors duration-300"
-                    placeholder="Tu nombre"
-                  />
-                </div>
+              <form ref={form} onSubmit={sendEmail} className="space-y-6">
+              <div>
+                <label htmlFor="name" className="block text-base font-medium text-gray-700 mb-1">Nombre</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  placeholder="Tu nombre"
+                />
+              </div>
 
                 <div>
                   <label htmlFor="email" className="block text-sm md:text-base font-medium text-gray-700 mb-1 md:mb-2">
