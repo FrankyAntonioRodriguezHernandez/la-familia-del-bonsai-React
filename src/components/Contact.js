@@ -148,16 +148,16 @@ const Contact = () => {
               </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-sm md:text-base font-medium text-gray-700 mb-1 md:mb-2">
-                    Mensaje
-                  </label>
-                  <textarea
-                    id="message"
-                    rows="4"
-                    className="w-full px-4 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors duration-300"
-                    placeholder="Cuéntanos cómo podemos ayudarte..."
-                  ></textarea>
-                </div>
+                <label htmlFor="message" className="block text-base font-medium text-gray-700 mb-1">Mensaje</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="4"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  placeholder="Cuéntanos cómo podemos ayudarte..."
+                ></textarea>
+              </div>
 
                 <button
                   type="submit"
