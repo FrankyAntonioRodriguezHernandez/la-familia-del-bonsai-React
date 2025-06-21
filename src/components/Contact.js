@@ -136,16 +136,16 @@ const Contact = () => {
               </div>
 
                 <div>
-                  <label htmlFor="email" className="block text-sm md:text-base font-medium text-gray-700 mb-1 md:mb-2">
-                    Email
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    className="w-full px-4 py-2 md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors duration-300"
-                    placeholder="tu@email.com"
-                  />
-                </div>
+                <label htmlFor="email" className="block text-base font-medium text-gray-700 mb-1">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="user_email"
+                  required
+                  className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+                  placeholder="tu@email.com"
+                />
+              </div>
 
                 <div>
                   <label htmlFor="message" className="block text-sm md:text-base font-medium text-gray-700 mb-1 md:mb-2">
