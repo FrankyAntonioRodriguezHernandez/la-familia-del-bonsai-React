@@ -43,8 +43,32 @@ const Footer = () =>{
                     </a>
                 </li>
                 </ul>
-          </div>
+            </div>
 
+            <div className="flex flex-col">
+              <h4 className="text-lg font-semibold mb-4">Contacto</h4>
+              <ul className="space-y-3">
+                <li className="flex">
+              <div className="flex items-center">
+                <MapPinIcon className="h-5 w-5 text-gray-300 mr-3 flex-shrink-0" />
+              </div>
+              <span className="text-gray-300">
+                Abrahan Delgado #60 <br />
+                Ciego de Ávila, Cuba
+              </span>
+                </li>
+                <li className="flex items-center">
+                  <PhoneIcon className="h-5 w-5 text-gray-300 mr-3 flex-shrink-0" />
+                  <span className="text-gray-300">+53 53646319</span>
+                </li>
+                <li className="flex items-center">
+                <EnvelopeIcon className="h-5 w-5 text-gray-300 mr-3 flex-shrink-0" />
+                  <span className="text-gray-300">frankyan2001@gmail.com</span>
+                </li>
+              </ul>
+            </div>
+
+            
         </div>
 
       </div>
