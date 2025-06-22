@@ -5,6 +5,7 @@ import Home from './pages/home/Home';
 import ServicesFull from './pages/services/ServicesFull';
 import ScrollToTop from './hooks/ScrollToTop'; 
 import EventsFull from './pages/events/EventsFull';
+import Footer from './components/Footer';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path="/services" element={<ServicesFull />} />
           <Route path="/events" element={<EventsFull />} />
         </Routes>
+        <Footer/>
         
       </div>
     </Router>
