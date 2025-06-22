@@ -103,9 +103,23 @@ const Footer = () =>{
             </div>
           </div>
         </div>
-        
-        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
-          <p>&copy; {new Date().getFullYear()} La Familia del Bonsai. Todos los derechos reservados.</p>
+
+        <div className="border-t border-gray-700 mt-8 pt-6 flex flex-col md:flex-row justify-between items-center">
+          <div className="text-gray-400 mb-4 md:mb-0">
+            <p>&copy; {new Date().getFullYear()} La Familia del Bonsai. Todos los derechos reservados.</p>
+          </div>
+          
+          <div className="flex space-x-4">
+            <Link to="/politica-privacidad" className="text-gray-400 hover:text-white transition-colors">
+              Política de Privacidad
+            </Link>
+            <Link to="/terminos-condiciones" className="text-gray-400 hover:text-white transition-colors">
+              Términos y Condiciones
+            </Link>
+            <Link to="/aviso-legal" className="text-gray-400 hover:text-white transition-colors">
+              Aviso Legal
+            </Link>
+          </div>
         </div>
 
       </div>
