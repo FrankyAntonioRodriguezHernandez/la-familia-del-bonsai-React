@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
-import Taller1 from '../assets/Events/Taller1.jpg';
-import Exposicion1 from '../assets/Events/Exposicion1.jpg';
-import MejorMomento1 from '../assets/Events/MejorMomento1.jpg';
+import Taller1 from '../../../images/Events/Taller1.jpg';
+import Exposicion1 from '../../../images/Events/Exposicion1.jpg';
+import MejorMomento1 from '../../../images/Events/MejorMomento1.jpg';
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);

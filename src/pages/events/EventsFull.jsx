@@ -1,8 +1,8 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import Taller1 from '../assets/Events/Taller1.jpg';
-import Exposicion1 from '../assets/Events/Exposicion1.jpg';
-import MejorMomento1 from '../assets/Events/MejorMomento1.jpg';
+import Taller1 from '../../images/Events/Taller1.jpg';
+import Exposicion1 from '../../images/Events/Exposicion1.jpg';
+import MejorMomento1 from '../../images/Events/MejorMomento1.jpg';
 
 const allEvents = [
   {

@@ -1,11 +1,11 @@
 import { useLocation } from "react-router-dom";
-import Information from "./Information";
-import Hero from "./Hero";
-import Services from "./Services";
-import Events from "./Events";
-import Contact from "./Contact";
+import Information from "./components/Information";
+import Hero from "./components/Hero";
+import Services from "./components/Services";
+import Events from "./components/Events";
+import Contact from "./components/Contact";
 import { useEffect } from "react";
-import Testimonials from "./Testimonials";
+import Testimonials from "./components/Testimonials";
 
 
 export default function Home() {

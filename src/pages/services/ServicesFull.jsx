@@ -6,28 +6,28 @@ const ServicesFull = () => {
     {
       title: "Poda y técnica de bonsai",
       description: "Más que una creación, una experiencia que se alimenta de naturaleza",
-      image: require('../assets/Services/Poda1.jpg')
+      image: require('../../images/Services/Poda1.jpg')
     },
     {
       title: "Arrendamiento de bonsai",
       description: "Le ofrecemos la oportunidad de tener un bonsai como experiencia para eventos especiales",
-      image: require('../assets/Services/Arrendamiento1.jpg')
+      image: require('../../images/Services/Arrendamiento1.jpg')
     },
     {
       title: "Decoración de eventos",
       description: "Transformamos su evento en una experiencia única, integrando elegancia y armonía",
-      image: require('../assets/Services/Decoracion1.jpg')
+      image: require('../../images/Services/Decoracion1.jpg')
     },
     // Agrega aquí TODOS tus servicios adicionales
     {
       title: "Cuidado profesional",
       description: "Mantenimiento especializado para bonsais antiguos",
-      image: require('../assets/Services/Poda1.jpg')
+      image: require('../../images/Services/Poda1.jpg')
     },
     {
       title: "Talleres educativos",
       description: "Aprende el arte del bonsai con expertos",
-      image: require('../assets/Services/Arrendamiento1.jpg')
+      image: require('../../images/Services/Arrendamiento1.jpg')
     }
   ];
 

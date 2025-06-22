@@ -1,5 +1,5 @@
 
-import LaFamiliaDelBonsai1 from '../assets/Hero/BonsaiTreeBonania1.jpg';
+import LaFamiliaDelBonsai1 from '../../../images/Hero/BonsaiTreeBonania1.jpg';
 
 const Hero = () => {
   return (
