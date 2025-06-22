@@ -3,7 +3,7 @@ import './App.css';
 import Header from './components/Header';
 
 import ServicesFull from './components/ServicesFull';
-import ScrollToTop from './components/ScrollToTop'; 
+import ScrollToTop from './hooks/ScrollToTop'; 
 import EventsFull from './components/EventsFull';
 
 import Home from './components/Home';
