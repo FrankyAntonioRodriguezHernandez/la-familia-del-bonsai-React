@@ -180,11 +180,6 @@ const Contact = () => {
         </div>
       </div>
 
-      <div className="mt-16 md:mt-20 pt-6 md:pt-8 border-t border-gray-700">
-        <div className="text-center text-gray-400 text-sm md:text-base">
-          <p>&copy; 2024 La Familia del Bonsai. Todos los derechos reservados.</p>
-        </div>
-      </div>
     </section>
   );
 };
