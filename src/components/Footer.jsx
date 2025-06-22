@@ -103,6 +103,10 @@ const Footer = () =>{
             </div>
           </div>
         </div>
+        
+        <div className="border-t border-gray-700 mt-8 pt-6 text-center text-gray-400">
+          <p>&copy; {new Date().getFullYear()} La Familia del Bonsai. Todos los derechos reservados.</p>
+        </div>
 
       </div>
     </footer>
