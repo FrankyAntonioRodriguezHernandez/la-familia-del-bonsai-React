@@ -68,7 +68,40 @@ const Footer = () =>{
               </ul>
             </div>
 
-            
+            <div className="flex flex-col">
+            <h4 className="text-lg font-semibold mb-4">Redes Sociales</h4>
+            <div className="flex flex-col space-y-3">
+              <a 
+                href="https://whatsapp.com/channel/0029VaHjEYjA89Mrmf2zPv2K" 
+                className="flex items-center text-gray-300 hover:text-white transition-colors"
+              >
+                <div className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-full mr-3 transition-colors duration-300">
+                  <FaWhatsapp className="h-4 w-4" />
+                </div>
+                <span>WhatsApp</span>
+              </a>
+              
+              <a 
+                href="https://www.instagram.com/la_familia_del_bonsai?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" 
+                className="flex items-center text-gray-300 hover:text-white transition-colors"
+              >
+                <div className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-full mr-3 transition-colors duration-300">
+                  <FaInstagram className="h-4 w-4" />
+                </div>
+                <span>Instagram</span>
+              </a>
+              
+              <a 
+                href="https://t.me/Dreamcatchersboy" 
+                className="flex items-center text-gray-300 hover:text-white transition-colors"
+              >
+                <div className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 rounded-full mr-3 transition-colors duration-300">
+                  <FaTelegram className="h-4 w-4" />
+                </div>
+                <span>Telegram</span>
+              </a>
+            </div>
+          </div>
         </div>
 
       </div>
