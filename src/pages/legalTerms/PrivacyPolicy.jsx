@@ -44,6 +44,18 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
             
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">4. Compartir información</h2>
+              <p className="mb-4">
+                No vendemos ni alquilamos tu información personal a terceros. Solo compartimos información cuando:
+              </p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Es necesario para proporcionar los servicios que solicitas</li>
+                <li>Tenemos tu consentimiento explícito</li>
+                <li>Estamos obligados por ley</li>
+              </ul>
+            </section>
+            
           </div>
         </div>
       </main>
