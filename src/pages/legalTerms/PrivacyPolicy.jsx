@@ -14,6 +14,12 @@ const PrivacyPolicy = () => {
           <div className="prose max-w-none text-gray-700">
             <p className="mb-6">Última actualización: {new Date().toLocaleDateString()}</p>
             
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">1. Introducción</h2>
+              <p className="mb-4">
+                En <strong>La Familia del Bonsai</strong>, respetamos y protegemos tu privacidad. Esta política explica cómo recopilamos, usamos y protegemos tu información personal cuando visitas nuestro sitio web o utilizas nuestros servicios.
+              </p>
+            </section>
             
           </div>
         </div>
