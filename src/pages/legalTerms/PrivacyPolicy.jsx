@@ -68,6 +68,14 @@ const PrivacyPolicy = () => {
               <p>Para ejercer estos derechos, contáctanos en <a href="mailto:frankyan2001@gmail.com" className="text-emerald-600 hover:underline">frankyan2001@gmail.com</a>.</p>
             </section>
             
+            
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">7. Cambios a esta política</h2>
+              <p className="mb-4">
+                Podemos actualizar esta política ocasionalmente. Te notificaremos sobre cambios significativos publicando la nueva política en nuestro sitio web.
+              </p>
+            </section>
+            
           </div>
         </div>
       </main>
