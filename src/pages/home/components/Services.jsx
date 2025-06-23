@@ -1,6 +1,6 @@
 
 import { Link } from 'react-router-dom';
-import ServiceCard from '../../services/ServiceCard';
+import ServiceCard from '../../services/components/ServiceCard';
 
 const Services = () => {
   const featuredServices = [
