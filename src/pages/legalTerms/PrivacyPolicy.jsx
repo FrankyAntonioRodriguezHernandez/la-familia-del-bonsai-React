@@ -21,6 +21,17 @@ const PrivacyPolicy = () => {
               </p>
             </section>
             
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">2. Información que recopilamos</h2>
+              <p className="mb-4">Podemos recopilar los siguientes tipos de información:</p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li><strong>Información de contacto:</strong> Nombre, dirección de correo electrónico, número de teléfono.</li>
+                <li><strong>Información de transacciones:</strong> Detalles sobre compras o servicios que solicitas.</li>
+                <li><strong>Datos técnicos:</strong> Dirección IP, tipo de navegador, páginas visitadas.</li>
+                <li><strong>Contenido que nos proporcionas:</strong> Mensajes, consultas o comentarios que nos envías.</li>
+              </ul>
+            </section>
+            
           </div>
         </div>
       </main>
