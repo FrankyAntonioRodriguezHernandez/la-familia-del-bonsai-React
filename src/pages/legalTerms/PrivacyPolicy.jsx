@@ -32,6 +32,18 @@ const PrivacyPolicy = () => {
               </ul>
             </section>
             
+            <section className="mb-8">
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">3. Cómo usamos tu información</h2>
+              <p className="mb-4">Utilizamos tu información para:</p>
+              <ul className="list-disc pl-6 mb-4 space-y-2">
+                <li>Proporcionar y mejorar nuestros servicios de cultivo de bonsáis</li>
+                <li>Responder a tus consultas y solicitudes</li>
+                <li>Procesar transacciones y enviar confirmaciones</li>
+                <li>Enviar información sobre talleres y eventos (solo si nos das permiso)</li>
+                <li>Mejorar la seguridad y funcionalidad de nuestro sitio web</li>
+              </ul>
+            </section>
+            
           </div>
         </div>
       </main>
