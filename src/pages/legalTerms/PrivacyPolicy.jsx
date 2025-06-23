@@ -76,6 +76,18 @@ const PrivacyPolicy = () => {
               </p>
             </section>
             
+            <section>
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">8. Contacto</h2>
+              <p className="mb-4">
+                Si tienes preguntas sobre esta política de privacidad, contáctanos en:
+              </p>
+              <address className="not-italic">
+                <p>La Familia del Bonsai</p>
+                <p>Abrahan Delgado #60, Ciego de Ávila, Cuba</p>
+                <p>Teléfono: +53 53646319</p>
+                <p>Email: <a href="mailto:frankyan2001@gmail.com" className="text-emerald-600 hover:underline">frankyan2001@gmail.com</a></p>
+              </address>
+            </section>
           </div>
         </div>
       </main>
