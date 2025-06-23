@@ -4,7 +4,6 @@ const PrivacyPolicy = () => {
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
 
-      {/* Contenido principal */}
       <main className="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="bg-white p-6 md:p-10 rounded-lg shadow-lg">
           <h1 className="text-3xl md:text-4xl font-bold text-emerald-800 mb-6 border-b pb-4">
@@ -70,14 +69,14 @@ const PrivacyPolicy = () => {
             
             
             <section className="mb-8">
-              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">7. Cambios a esta política</h2>
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">6. Cambios a esta política</h2>
               <p className="mb-4">
                 Podemos actualizar esta política ocasionalmente. Te notificaremos sobre cambios significativos publicando la nueva política en nuestro sitio web.
               </p>
             </section>
             
             <section>
-              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">8. Contacto</h2>
+              <h2 className="text-2xl font-semibold text-emerald-700 mb-4">7. Contacto</h2>
               <p className="mb-4">
                 Si tienes preguntas sobre esta política de privacidad, contáctanos en:
               </p>
