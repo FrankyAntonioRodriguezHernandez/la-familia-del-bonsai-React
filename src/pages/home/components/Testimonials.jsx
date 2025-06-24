@@ -9,26 +9,32 @@ const Testimonials = () => {
       name: "Ana Sol",
       text: "Gracias por las lindas palabras y sus excelentes servicios",
       rating: 5,
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+
     },
     {
       name: "Carlos Mendoza",
       text: "Me encanta su trabajo, amo sus creaciones. Definitivamente las recomiendo",
       rating: 5,
+      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "María García",
       text: "Sus bonsais son súper bonitos y fáciles de transportar",
       rating: 5,
+      avatar: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Roberto Silva",
       text: "Excelente servicio, transformaron mi jardín en un espacio zen perfecto",
       rating: 5,
+      avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=face"
     },
     {
       name: "Isabel Torres",
       text: "Profesionales excepcionales, sus bonsais son verdaderas obras de arte",
       rating: 4.5,
+      avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=face"
     }
   ];
 
@@ -84,13 +90,20 @@ const Testimonials = () => {
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
               <div key={index} className="px-2 md:px-4">
-  <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center h-full mx-2">
-    <h3 className="text-xl font-semibold mt-4 text-gray-800">{testimonial.name}</h3>
-    <p className="mt-4 text-gray-800 italic font-['Pinyon_Script']">"{testimonial.text}"</p>
-    <br/>
-    <StarRating rating={testimonial.rating} />
-  </div>
-</div>
+              <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center h-full mx-2">
+                <h3 className="text-xl font-semibold mt-4 text-gray-800">{testimonial.name}</h3>
+                <div className="flex justify-center mb-4">
+                    <img 
+                      src={testimonial.avatar} 
+                      alt={testimonial.name} 
+                      className="w-16 h-16 md:w-20 md:h-20 rounded-full object-cover border-4 border-white shadow"
+                    />
+                  </div>
+                <p className="mt-4 text-gray-800 italic font-['Pinyon_Script']">"{testimonial.text}"</p>
+                <br/>
+                <StarRating rating={testimonial.rating} />
+              </div>
+            </div>
 
             ))}
           </Slider>
