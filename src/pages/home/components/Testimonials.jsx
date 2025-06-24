@@ -45,19 +45,31 @@ const Testimonials = () => {
   };
   
   const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    appendDots: (dots) => (
-      <div style={{ position: 'absolute', bottom: '-30px', width: '100%', textAlign: 'center' }}>
-        <ul style={{ margin: '0', padding: '0', display: 'inline-block' }}>{dots}</ul>
-      </div>
-    )
-  };
+  dots: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  centerMode: true,
+  centerPadding: "60px", 
+  autoplay: true,
+  autoplaySpeed: 5000,
+  responsive: [
+    {
+      breakpoint: 768, 
+      settings: {
+        centerMode: false,
+        centerPadding: "0px",
+      },
+    },
+  ],
+  appendDots: (dots) => (
+    <div style={{ position: 'absolute', bottom: '-30px', width: '100%', textAlign: 'center' }}>
+      <ul style={{ margin: '0', padding: '0', display: 'inline-block' }}>{dots}</ul>
+    </div>
+  )
+};
+
 
   return(
     <div className="py-16 md:py-20 bg-gradient-to-b from-yellow-50 to-white-800 relative overflow-hidden">
@@ -71,14 +83,15 @@ const Testimonials = () => {
         <div className="relative">
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="px-4">
-                <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center h-full">
-                  <h3 className="text-xl font-semibold mt-4 text-gray-800">{testimonial.name}</h3>
-                  <p className="mt-4 text-gray-800 italic font-['Pinyon_Script']">"{testimonial.text}"</p>
-                  <br/>
-                  <StarRating rating={testimonial.rating} />
-                </div>
-              </div>
+              <div key={index} className="px-2 md:px-4">
+  <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center h-full mx-2">
+    <h3 className="text-xl font-semibold mt-4 text-gray-800">{testimonial.name}</h3>
+    <p className="mt-4 text-gray-800 italic font-['Pinyon_Script']">"{testimonial.text}"</p>
+    <br/>
+    <StarRating rating={testimonial.rating} />
+  </div>
+</div>
+
             ))}
           </Slider>
         </div>
