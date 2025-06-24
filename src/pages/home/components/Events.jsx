@@ -85,7 +85,7 @@ const Events = () => {
                 <DeviceFrame
                   imageSrc={events[currentSlide].image}
                   alt={events[currentSlide].title}
-                  className="w-full h-auto"
+                  className="w-[110%] h-[100%]"
                 />
               </div>
 
