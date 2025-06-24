@@ -50,7 +50,7 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <Link to="/services">
-            <button className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-colors duration-300 shadow-xl">
+            <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-colors duration-300 shadow-xl">
               Ver todos nuestros servicios →
             </button>
           </Link>
