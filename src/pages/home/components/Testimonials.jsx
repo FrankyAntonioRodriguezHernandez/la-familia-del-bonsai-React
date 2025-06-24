@@ -98,8 +98,8 @@ const Testimonials = () => {
         <div className="relative">
           <Slider {...settings}>
             {testimonials.map((testimonial, index) => (
-              <div key={index} className="px-2 md:px-4">
-              <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center h-full mx-2">
+            <div key={index} className="flex items-stretch px-2 md:px-4">
+                <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center w-full h-auto mx-2 min-h-[340px] flex flex-col justify-between">
                 <h3 className="text-xl font-semibold mt-4 text-gray-800">{testimonial.name}</h3>
                 <div className="flex justify-center mb-4">
                     <img 
