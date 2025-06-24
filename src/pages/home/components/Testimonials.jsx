@@ -1,4 +1,3 @@
-import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -8,7 +7,7 @@ const Testimonials = () => {
   const testimonials = [
     {
       name: "Ana Sol",
-      text: "Amo mi trabajo, gracias por las lindas palabras y me alegra que les haya gustado",
+      text: "Gracias por las lindas palabras y sus excelentes servicios",
       rating: 5,
     },
     {
@@ -75,7 +74,7 @@ const Testimonials = () => {
               <div key={index} className="px-4">
                 <div className="bg-white p-6 md:p-8 rounded-xl md:rounded-2xl shadow-lg md:shadow-xl text-center h-full">
                   <h3 className="text-xl font-semibold mt-4 text-gray-800">{testimonial.name}</h3>
-                  <p className="mt-4 text-gray-600 italic">"{testimonial.text}"</p>
+                  <p className="mt-4 text-gray-800 italic font-['Pinyon_Script']">"{testimonial.text}"</p>
                   <br/>
                   <StarRating rating={testimonial.rating} />
                 </div>
