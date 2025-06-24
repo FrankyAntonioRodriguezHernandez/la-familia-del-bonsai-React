@@ -68,48 +68,63 @@ const Events = () => {
           </h2>
           <p className="text-lg text-gray-600">Algunos de nuestros eventos</p>
         </div>
-
         <div className="relative">
           <div className="bg-white rounded-xl lg:rounded-2xl shadow-lg lg:shadow-xl overflow-visible">
             <AnimatePresence custom={direction} mode="wait">
               <motion.div
-                key={currentSlide}
-                custom={direction}
-                variants={variants}
-                initial="enter"
-                animate="center"
-                exit="exit"
-                className="flex flex-col lg:flex-row"
-              >
-                <div className="relative w-full lg:w-1/2 flex items-center justify-start overflow-visible">
-                  <div className="relative -mt-16 -ml-16 mb-[-3rem] z-10">
-                    <DeviceFrame
-                      imageSrc={events[currentSlide].image}
-                      alt={events[currentSlide].title}
-                      className="max-w-[400px]"
-                    />
-                  </div>
+  key={currentSlide}
+  custom={direction}
+  variants={variants}
+  initial="enter"
+  animate="center"
+  exit="exit"
+  className="flex flex-col lg:flex-row"
+>
+  {/* Device Frame - arriba en móvil, sobresalido en escritorio */}
+<div className="relative w-full lg:w-1/2 flex items-center justify-center lg:justify-start overflow-visible order-1 lg:order-1">
+  <div className="relative z-10 max-w-[90%] sm:max-w-[350px] md:max-w-[480px] lg:max-w-[420px] 
+                  mx-auto lg:mx-0 
+                  lg:scale-x-110
+                  lg:-ml-20  // sobresale a la izquierda
+                  lg:mb-[-4rem]  // sobresale hacia abajo
+                  lg:-mt-24    // sobresale hacia arriba
+                  lg:translate-x-24">  {/* sobresale a la derecha */}
+    <DeviceFrame
+      imageSrc={events[currentSlide].image}
+      alt={events[currentSlide].title}
+      className="w-full h-auto"
+    />
+  </div>
 
-                  <div className="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-xs z-30">
-                    {currentSlide + 1} / {events.length}
-                  </div>
-                </div>
+  <div className="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-xs z-30">
+    {currentSlide + 1} / {events.length}
+  </div>
+</div>
 
-                <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center lg:w-1/2">
-                  <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                    {events[currentSlide].title}
-                  </h3>
-                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
-                    {events[currentSlide].description}
-                  </p>
-                  <Link
-                    to="/events"
-                    className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-md inline-block text-center"
-                  >
-                    Ver todos los eventos
-                  </Link>
-                </div>
-              </motion.div>
+
+  {/* Texto - abajo en móvil, derecha en escritorio */}
+  <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center lg:w-1/2 order-2 lg:order-2">
+    <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4 text-center lg:text-left">
+      {events[currentSlide].title}
+    </h3>
+    <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed text-center lg:text-left">
+      {events[currentSlide].description}
+    </p>
+    <div className="text-center lg:text-left">
+      <Link
+        to="/events"
+        className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-md inline-block"
+      >
+        Ver todos los eventos
+      </Link>
+    </div>
+  </div>
+</motion.div>
+
+
+
+
+
             </AnimatePresence>
           </div>
 

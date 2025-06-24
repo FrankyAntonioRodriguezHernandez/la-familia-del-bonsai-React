@@ -30,7 +30,7 @@ const DeviceFrame = ({
         <img
           src={imageSrc}
           alt={alt}
-          className="w-full h-full object-cover"
+          className={`w-full h-auto ${className}`}
         />
       </div>
     </div>
