@@ -1,41 +1,40 @@
 import React, { useState } from 'react';
-import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
+import { ChevronRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Taller1 from '../../../images/Events/Taller1.jpg';
 import Exposicion1 from '../../../images/Events/Exposicion1.jpg';
 import MejorMomento1 from '../../../images/Events/MejorMomento1.jpg';
+import DeviceFrame from '../../events/Device-frame';
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const [direction, setDirection] = useState(0); // -1 para izquierda, 1 para derecha
+  const [direction, setDirection] = useState(1);
 
   const events = [
     {
       title: "Exposiciones de Arte",
-      description: "Celebramos la belleza del bonsai en exposiciones que muestran la armonía entre naturaleza y técnica artística tradicional.",
-      image: Exposicion1
+      description:
+        "Celebramos la belleza del bonsai en exposiciones que muestran la armonía entre naturaleza y técnica artística tradicional.",
+      image: Exposicion1,
     },
     {
       title: "Talleres Especializados",
-      description: "Eventos educativos donde compartimos técnicas milenarias y modernas para el cuidado perfecto de sus bonsai en cada estación del año.",
-      image: Taller1
+      description:
+        "Eventos educativos donde compartimos técnicas milenarias y modernas para el cuidado perfecto de sus bonsai en cada estación del año.",
+      image: Taller1,
     },
     {
       title: "Mejores Momentos",
-      description: "Guiamos a través de las estaciones, revelando el momento ideal para cada paso en el arte del bonsai, asegurando su crecimiento armonioso y saludable.",
-      image: MejorMomento1
+      description:
+        "Guiamos a través de las estaciones, revelando el momento ideal para cada paso en el arte del bonsai, asegurando su crecimiento armonioso y saludable.",
+      image: MejorMomento1,
     },
   ];
 
   const nextSlide = () => {
     setDirection(1);
     setCurrentSlide((prev) => (prev + 1) % events.length);
-  };
-
-  const prevSlide = () => {
-    setDirection(-1);
-    setCurrentSlide((prev) => (prev - 1 + events.length) % events.length);
   };
 
   const variants = {
@@ -67,11 +66,11 @@ const Events = () => {
           <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
             EVENTOS DESTACADOS
           </h2>
-          <p className="text-lg text-gray-600">Algunos de nuestros próximos eventos</p>
+          <p className="text-lg text-gray-600">Algunos de nuestros eventos</p>
         </div>
 
         <div className="relative">
-          <div className="bg-white rounded-xl lg:rounded-2xl shadow-lg lg:shadow-xl overflow-hidden">
+          <div className="bg-white rounded-xl lg:rounded-2xl shadow-lg lg:shadow-xl overflow-visible">
             <AnimatePresence custom={direction} mode="wait">
               <motion.div
                 key={currentSlide}
@@ -82,13 +81,16 @@ const Events = () => {
                 exit="exit"
                 className="flex flex-col lg:flex-row"
               >
-                <div className="relative w-full lg:w-1/2 h-64 md:h-80 lg:h-96">
-                  <img
-                    src={events[currentSlide].image}
-                    alt={events[currentSlide].title}
-                    className="w-full h-full object-cover"
-                  />
-                  <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-xs md:text-sm">
+                <div className="relative w-full lg:w-1/2 flex items-center justify-start overflow-visible">
+                  <div className="relative -mt-16 -ml-16 mb-[-3rem] z-10">
+                    <DeviceFrame
+                      imageSrc={events[currentSlide].image}
+                      alt={events[currentSlide].title}
+                      className="max-w-[400px]"
+                    />
+                  </div>
+
+                  <div className="absolute top-2 right-2 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-xs z-30">
                     {currentSlide + 1} / {events.length}
                   </div>
                 </div>
@@ -111,13 +113,7 @@ const Events = () => {
             </AnimatePresence>
           </div>
 
-          {/* Botones de navegación */}
-          <button
-            onClick={prevSlide}
-            className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md transition-all duration-300 z-10"
-          >
-            <ChevronLeftIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
-          </button>
+          {/* Botón de siguiente slide */}
           <button
             onClick={nextSlide}
             className="absolute right-2 md:right-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md transition-all duration-300 z-10"
