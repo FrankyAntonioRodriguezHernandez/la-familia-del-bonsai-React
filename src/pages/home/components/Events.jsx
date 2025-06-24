@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
+import { AnimatePresence, motion } from 'framer-motion';
 import Taller1 from '../../../images/Events/Taller1.jpg';
 import Exposicion1 from '../../../images/Events/Exposicion1.jpg';
 import MejorMomento1 from '../../../images/Events/MejorMomento1.jpg';
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
+  const [direction, setDirection] = useState(0); // -1 para izquierda, 1 para derecha
 
   const events = [
     {
@@ -27,11 +29,30 @@ const Events = () => {
   ];
 
   const nextSlide = () => {
+    setDirection(1);
     setCurrentSlide((prev) => (prev + 1) % events.length);
   };
 
   const prevSlide = () => {
+    setDirection(-1);
     setCurrentSlide((prev) => (prev - 1 + events.length) % events.length);
+  };
+
+  const variants = {
+    enter: (direction) => ({
+      x: direction > 0 ? 300 : -300,
+      opacity: 0,
+    }),
+    center: {
+      x: 0,
+      opacity: 1,
+      transition: { duration: 0.4 },
+    },
+    exit: (direction) => ({
+      x: direction < 0 ? 300 : -300,
+      opacity: 0,
+      transition: { duration: 0.3 },
+    }),
   };
 
   return (
@@ -51,35 +72,46 @@ const Events = () => {
 
         <div className="relative">
           <div className="bg-white rounded-xl lg:rounded-2xl shadow-lg lg:shadow-xl overflow-hidden">
-            <div className="flex flex-col lg:flex-row">
-              <div className="relative w-full lg:w-1/2 h-64 md:h-80 lg:h-96">
-                <img
-                  src={events[currentSlide].image}
-                  alt={events[currentSlide].title}
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-xs md:text-sm">
-                  {currentSlide + 1} / {events.length}
+            <AnimatePresence custom={direction} mode="wait">
+              <motion.div
+                key={currentSlide}
+                custom={direction}
+                variants={variants}
+                initial="enter"
+                animate="center"
+                exit="exit"
+                className="flex flex-col lg:flex-row"
+              >
+                <div className="relative w-full lg:w-1/2 h-64 md:h-80 lg:h-96">
+                  <img
+                    src={events[currentSlide].image}
+                    alt={events[currentSlide].title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute top-4 right-4 bg-black bg-opacity-50 text-white px-3 py-1 rounded-full text-xs md:text-sm">
+                    {currentSlide + 1} / {events.length}
+                  </div>
                 </div>
-              </div>
 
-              <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center lg:w-1/2">
-                <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
-                  {events[currentSlide].title}
-                </h3>
-                <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
-                  {events[currentSlide].description}
-                </p>
-                <Link 
-                  to="/events" 
-                  className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-md inline-block text-center"
-                >
-                  Ver todos los eventos
-                </Link>
-              </div>
-            </div>
+                <div className="p-6 md:p-8 lg:p-10 flex flex-col justify-center lg:w-1/2">
+                  <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+                    {events[currentSlide].title}
+                  </h3>
+                  <p className="text-base md:text-lg text-gray-600 mb-6 leading-relaxed">
+                    {events[currentSlide].description}
+                  </p>
+                  <Link
+                    to="/events"
+                    className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-md inline-block text-center"
+                  >
+                    Ver todos los eventos
+                  </Link>
+                </div>
+              </motion.div>
+            </AnimatePresence>
           </div>
 
+          {/* Botones de navegación */}
           <button
             onClick={prevSlide}
             className="absolute left-2 md:left-4 top-1/2 transform -translate-y-1/2 bg-white bg-opacity-90 hover:bg-opacity-100 rounded-full p-2 md:p-3 shadow-md transition-all duration-300 z-10"
@@ -93,11 +125,15 @@ const Events = () => {
             <ChevronRightIcon className="h-5 w-5 md:h-6 md:w-6 text-gray-800" />
           </button>
 
+          {/* Indicadores de slide */}
           <div className="flex justify-center mt-6 space-x-2">
             {events.map((_, index) => (
               <button
                 key={index}
-                onClick={() => setCurrentSlide(index)}
+                onClick={() => {
+                  setDirection(index > currentSlide ? 1 : -1);
+                  setCurrentSlide(index);
+                }}
                 className={`w-2 h-2 md:w-3 md:h-3 rounded-full transition-all duration-300 ${
                   index === currentSlide ? 'bg-emerald-600' : 'bg-gray-300'
                 }`}
