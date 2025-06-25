@@ -1,6 +1,5 @@
 
 import BonsaiTreeBonania1 from '../../../images/Hero/BonsaiTreeBonania1.jpg';
-import DarkLighModeSwitch from '../../../components/DarkLighModeSwitch';
 
 const Hero = () => {
   return (
@@ -28,7 +27,6 @@ const Hero = () => {
                 TRANSFORMAMOS SUS ESPACIOS EN<br />
                 ENTORNOS ARMONIOSOS
               </p>
-              <DarkLighModeSwitch/>
               <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-lg">
                 Ver Catálogo
               </button>
