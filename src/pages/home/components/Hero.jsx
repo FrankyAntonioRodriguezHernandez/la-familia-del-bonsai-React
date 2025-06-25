@@ -28,10 +28,9 @@ const Hero = () => {
                 TRANSFORMAMOS SUS ESPACIOS EN<br />
                 ENTORNOS ARMONIOSOS
               </p>
-              <PlantButton>Ver Catalogo</PlantButton>
-              {/*<button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-lg">
+              <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-lg">
                 Ver Catálogo
-              </button>*/}
+              </button>
             </div>
 
             {/* Bonsai Image */}
