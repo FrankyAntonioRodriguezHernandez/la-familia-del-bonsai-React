@@ -36,6 +36,10 @@ const StyledWrapper = styled.div`
     border-radius: 8px;
     box-shadow: 2px 2px 5px #18181869, inset 2px 2px 10px #ffffffb0;
     transition: all .3s ease-in-out;
+    @media (max-width: 768px) {
+      padding: 13px 25px;
+      margin-top: 80px;
+    }
   }
 
   .icon-1 {
