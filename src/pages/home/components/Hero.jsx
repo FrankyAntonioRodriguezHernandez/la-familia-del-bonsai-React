@@ -1,6 +1,6 @@
 
 import BonsaiTreeBonania1 from '../../../images/Hero/BonsaiTreeBonania1.jpg';
-import LaFamiliaDelBonsai1 from '../../../images/LaFamiliaDelBonsai2.jpg';
+import PlantButton from '../../../components/PlantButton';
 
 const Hero = () => {
   return (
@@ -28,6 +28,7 @@ const Hero = () => {
                 TRANSFORMAMOS SUS ESPACIOS EN<br />
                 ENTORNOS ARMONIOSOS
               </p>
+              <PlantButton></PlantButton>
               <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-lg">
                 Ver Catálogo
               </button>
@@ -38,7 +39,7 @@ const Hero = () => {
               <div className="relative">
                 <div className="w-80 h-80 bg-white rounded-full shadow-2xl overflow-hidden border-8 border-amber-100">
                   <img
-                    src={LaFamiliaDelBonsai1}
+                    src={BonsaiTreeBonania1}
                     alt="Bonsai Tree Bonania1"
                     className="w-full h-full object-cover"
                   />
