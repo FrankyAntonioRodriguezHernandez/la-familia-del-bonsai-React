@@ -1,4 +1,4 @@
-
+import PlantButton from '../../../components/PlantButton';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../../services/components/ServiceCard';
 
@@ -50,9 +50,7 @@ const Services = () => {
 
         <div className="text-center mt-12">
           <Link to="/services">
-            <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-4 rounded-full font-bold text-lg transition-colors duration-300 shadow-xl">
-              Ver todos nuestros servicios →
-            </button>
+            <PlantButton text="Ver todos nuestros servicios →" />
           </Link>
         </div>
       </div>
