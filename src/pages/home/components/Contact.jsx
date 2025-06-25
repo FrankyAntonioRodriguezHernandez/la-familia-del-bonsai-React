@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa';
+import PlantButton from '../../../components/PlantButton';
 
 const Contact = () => {
   const form = useRef();
@@ -168,11 +169,8 @@ const Contact = () => {
                 ></textarea>
               </div>
 
-                <button
-                  type="submit"
-                  className="w-full bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-300 shadow-md"
-                >
-                  Enviar Mensaje
+                <button type="submit">
+                  <PlantButton text="Enviar Mensaje" />
                 </button>
               </form>
             </div>
