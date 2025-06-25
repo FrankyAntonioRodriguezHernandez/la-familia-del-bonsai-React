@@ -6,6 +6,7 @@ import Taller1 from '../../../images/Events/Taller1.jpg';
 import Exposicion1 from '../../../images/Events/Exposicion1.jpg';
 import MejorMomento1 from '../../../images/Events/MejorMomento1.jpg';
 import DeviceFrame from '../../events/Device-frame';
+import PlantButton from '../../../components/PlantButton';
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -104,9 +105,8 @@ const Events = () => {
                   <div className="text-center lg:text-left">
                     <Link
                       to="/events"
-                      className="bg-emerald-600 hover:bg-emerald-700 text-white px-8 py-3 rounded-full text-lg font-semibold transition-colors duration-300 shadow-md inline-block"
                     >
-                      Ver todos los eventos
+                      <PlantButton text="Ver todos los eventos →" />
                     </Link>
                   </div>
                 </div>
