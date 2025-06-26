@@ -65,7 +65,7 @@ const Header = () => {
 
   return (
     <nav className="fixed w-full z-50 top-4">
-      {/* Botón móvil arriba a la izquierda */}
+      
       <div className="md:hidden absolute top-0 left-0 p-4 z-50">
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -78,11 +78,10 @@ const Header = () => {
           )}
         </button>
       </div>
-
-      {/* Fondo centralizado del header */}
+      
       <div className="hidden md:flex justify-center">
         <div className="bg-emerald-800 bg-opacity-90 backdrop-blur-sm rounded-full shadow-xl border border-gray-700 px-6 py-2">
-          {/* Versión desktop */}
+
           <div className="flex space-x-1">
             {navItems.map((item) =>
               item.isRoute ? (
@@ -111,8 +110,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-
-      {/* Menú móvil desplegable */}
+      
       {isMenuOpen && (
         <div ref={menuRef} className="md:hidden absolute top-16 left-4 bg-emerald-800 rounded-lg shadow-lg py-2 w-48 z-40">
           {navItems.map((item) =>
