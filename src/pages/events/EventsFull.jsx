@@ -62,13 +62,12 @@ const EventsFull = () => {
               viewport={{ once: true }}
               className={`flex flex-col-reverse lg:flex-row ${index % 2 !== 0 ? 'lg:flex-row-reverse' : ''} items-center gap-12 bg-white bg-opacity-80 rounded-3xl shadow-2xl backdrop-blur-md p-6 lg:p-12 border border-gray-200`}
             >
-              {/* Text */}
+              
               <div className="lg:w-1/2">
                 <h3 className="text-3xl font-bold text-emerald-800 mb-4">{event.title}</h3>
                 <p className="text-lg text-gray-700 leading-relaxed">{event.description}</p>
               </div>
 
-              {/* Image */}
               <div className="lg:w-1/2 w-full h-64 sm:h-80 lg:h-96 overflow-hidden rounded-2xl shadow-md">
                 <img
                   src={event.image}
