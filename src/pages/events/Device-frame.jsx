@@ -7,7 +7,7 @@ const DeviceFrame = ({
     <div
       className={`relative mt-4 sm:mt-8 md:mt-10 lg:mt-12 z-20 w-full max-w-[400px] sm:max-w-[480px] md:max-w-[560px] ${className}`}
     >
-      {/* Marco del teléfono */}
+      
       <img
         src={require("../../images/Events/device-frame.png")}
         alt="Device Frame"
