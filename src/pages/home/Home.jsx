@@ -17,7 +17,7 @@ export default function Home() {
       if (element) {
         setTimeout(() => {
           element.scrollIntoView({ behavior: 'smooth' });
-        }, 100); // Pequeño delay para asegurar que el DOM esté listo
+        }, 100); 
       }
     }
   }, [location.state]);
