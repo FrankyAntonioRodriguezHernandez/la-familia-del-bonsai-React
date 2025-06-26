@@ -29,7 +29,6 @@ const Services = () => {
         <div className="absolute bottom-[-60px] right-[15%] w-64 h-64 md:w-80 md:h-80 bg-amber-300 rounded-full opacity-20 animate-pulse"></div>
       </div>
 
-      {/* Organic background shapes */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-40 left-20 w-96 h-96 bg-emerald-200 rounded-full opacity-10 transform rotate-12"></div>
         <div className="absolute bottom-40 right-20 w-80 h-80 bg-amber-200 rounded-full opacity-10 transform -rotate-12"></div>
