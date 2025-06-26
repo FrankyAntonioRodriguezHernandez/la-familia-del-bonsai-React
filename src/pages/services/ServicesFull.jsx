@@ -17,8 +17,7 @@ const ServicesFull = () => {
       title: "Decoración de eventos",
       description: "Transformamos su evento en una experiencia única, integrando elegancia y armonía",
       image: require('../../images/Services/Decoracion1.jpg')
-    },
-    // Agrega aquí TODOS tus servicios adicionales
+    },    
     {
       title: "Cuidado profesional",
       description: "Mantenimiento especializado para bonsais antiguos",
