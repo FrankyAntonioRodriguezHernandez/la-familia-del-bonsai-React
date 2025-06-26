@@ -110,17 +110,7 @@ const Contact = () => {
 
                   <a href="https://t.me/Dreamcatchersboy" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
                     <FaTelegram className="h-4 w-4 md:h-5 md:w-5" />
-                  </a>
-                  
-                  {/* 
-                    <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
-                    <FaFacebook className="h-4 w-4 md:h-5 md:w-5" />
-                  </a>
-                  <a href="#" className="bg-emerald-600 hover:bg-emerald-700 text-white p-2 md:p-3 rounded-full transition-colors duration-300">
-                    <FaTwitter className="h-4 w-4 md:h-5 md:w-5" />
-                  </a>
-                    */}
-                  
+                  </a>                                   
                 </div>
               </div>
             </div>
