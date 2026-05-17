@@ -25,8 +25,7 @@ const PrivacyPolicy = () => {
               <p className="mb-4">Podemos recopilar los siguientes tipos de información:</p>
               <ul className="list-disc pl-6 mb-4 space-y-2">
                 <li><strong>Información de contacto:</strong> Nombre, dirección de correo electrónico, número de teléfono.</li>
-                <li><strong>Información de transacciones:</strong> Detalles sobre compras o servicios que solicitas.</li>
-                <li><strong>Datos técnicos:</strong> Dirección IP, tipo de navegador, páginas visitadas.</li>
+                <li><strong>Información de transacciones:</strong> Detalles sobre compras o servicios que solicitas en nuestra web.</li>
                 <li><strong>Contenido que nos proporcionas:</strong> Mensajes, consultas o comentarios que nos envías.</li>
               </ul>
             </section>
@@ -48,11 +47,6 @@ const PrivacyPolicy = () => {
               <p className="mb-4">
                 No vendemos ni alquilamos tu información personal a terceros. Solo compartimos información cuando:
               </p>
-              <ul className="list-disc pl-6 mb-4 space-y-2">
-                <li>Es necesario para proporcionar los servicios que solicitas</li>
-                <li>Tenemos tu consentimiento explícito</li>
-                <li>Estamos obligados por ley</li>
-              </ul>
             </section>
             
             <section className="mb-8">
