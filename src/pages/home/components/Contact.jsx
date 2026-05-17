@@ -11,8 +11,8 @@ const Contact = () => {
     e.preventDefault();
 
     emailjs.sendForm(
-      'service_n4i9yol',    
-      'template_660hhea',   
+      'service_n4i9yol',
+      'template_660hhea',
       form.current,
       'UgQvsCh1B6qBMqnoW'      
     ).then(
@@ -164,7 +164,7 @@ const Contact = () => {
                 </button>
               </form>
             </div>
-          </div>
+          </div> 
         </div>
       </div>
 

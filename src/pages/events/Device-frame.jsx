@@ -9,7 +9,7 @@ const DeviceFrame = ({
     >
       
       <img
-        src={require("../../images/Events/device-frame.png")}
+        src={require("../../images/Events/Exposicion1.jpg")}
         alt="Device Frame"
         className="w-full h-auto object-contain"
       />

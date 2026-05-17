@@ -2,6 +2,7 @@ import React from 'react';
 import zen1 from '../../../images/Information/zen1.jpg'
 import Bounganvilleas1 from '../../../images/Information/Bounganvilleas1.jpg'
 import ExpoVenta1 from '../../../images/Information/ExpoVenta1.jpg'
+import Jades from '../../../images/Information/Jades.jpg'
 
 
 const Information = () => {
@@ -19,7 +20,7 @@ const Information = () => {
     {
       title: "Innovamos en poner la tradición milenaria",
       description: "Combinamos técnicas ancestrales con innovación moderna.",
-      image: ExpoVenta1
+      image: Jades
     }
   ];
 
@@ -38,7 +39,7 @@ const Information = () => {
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Somos especialistas en transformar espacios a través del bonsai y la jardinería. Con 
-            raíces familiares y más de quince años de experiencia, fusionamos tradición y creatividad para 
+            raíces familiares y más de veinticinco años de experiencia, fusionamos tradición y creatividad para 
             crear ambientes que mejoran la vida y el bienestar.
           </p>
         </div>

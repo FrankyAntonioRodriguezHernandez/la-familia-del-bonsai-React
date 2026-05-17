@@ -5,7 +5,7 @@ import ServiceCard from '../../services/components/ServiceCard';
 const Services = () => {
   const featuredServices = [
     {
-      title: "Poda y técnica de bonsai",
+      title: "Expoventas de bonsai",
       description: "Más que una creación, una experiencia que se alimenta de naturaleza",
       image: require('../../../images/Services/Poda1.jpg')
     },
