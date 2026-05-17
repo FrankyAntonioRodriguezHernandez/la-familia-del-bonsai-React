@@ -9,7 +9,7 @@ const DeviceFrame = ({
     >
       
       <img
-        src={require("../../images/Events/Exposicion1.jpg")}
+        src={require("../../images/Events/DeviceFrame.png")}
         alt="Device Frame"
         className="w-full h-auto object-contain"
       />
@@ -17,8 +17,8 @@ const DeviceFrame = ({
       <div
         className="
           absolute
-          top-[19%] left-[4.5%] 
-          w-[91%] h-[75%] 
+          top-[19.5%] left-[3.5%] 
+          w-[93%] h-[76%] 
           rounded-[1.25rem]
           overflow-hidden 
           z-30
