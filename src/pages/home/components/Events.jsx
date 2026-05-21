@@ -7,6 +7,7 @@ import Exposicion1 from '../../../images/Events/Exposicion1.jpg';
 import MejorMomento1 from '../../../images/Events/MejorMomento1.jpg';
 import DeviceFrame from '../../events/Device-frame';
 import PlantButton from '../../../components/PlantButton';
+import FeriaMadre from '../../../images/Events/FeriaMadre.jpg'
 
 const Events = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -14,10 +15,9 @@ const Events = () => {
 
   const events = [
     {
-      title: "Exposiciones de Arte",
-      description:
-        "Celebramos la belleza del bonsai en exposiciones que muestran la armonía entre naturaleza y técnica artística tradicional.",
-      image: Exposicion1,
+      title: "Exposicion Por el día de Mamá",
+      description: "Compartiendo nuestro arte con las comunidades en saludo al día de las madres! Muchas Felicidades mamá",
+      image: FeriaMadre
     },
     {
       title: "Talleres Especializados",
