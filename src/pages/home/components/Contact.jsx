@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { PhoneIcon, EnvelopeIcon, MapPinIcon } from '@heroicons/react/24/outline';
 import { FaWhatsapp, FaInstagram, FaFacebook, FaTwitter, FaTelegram } from 'react-icons/fa';
-import PlantButton from '../../../components/PlantButton';
+import PlantButton from '../../../components/ui/PlantButton';
 
 const Contact = () => {
   const form = useRef();

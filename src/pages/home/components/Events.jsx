@@ -6,7 +6,7 @@ import Taller1 from '../../../images/Events/Taller1.jpg';
 import Exposicion1 from '../../../images/Events/Exposicion1.jpg';
 import MejorMomento1 from '../../../images/Events/MejorMomento1.jpg';
 import DeviceFrame from '../../events/Device-frame';
-import PlantButton from '../../../components/PlantButton';
+import PlantButton from '../../../components/ui/PlantButton';
 import FeriaMadre from '../../../images/Events/FeriaMadre.jpg'
 
 const Events = () => {

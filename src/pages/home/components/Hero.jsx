@@ -1,4 +1,4 @@
-import PlantButton from '../../../components/PlantButton';
+import PlantButton from '../../../components/ui/PlantButton';
 import BonsaiTreeBonania1 from '../../../images/Hero/BonsaiTreeBonania1.jpg';
 
 

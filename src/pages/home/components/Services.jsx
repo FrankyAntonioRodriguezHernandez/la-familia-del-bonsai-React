@@ -1,4 +1,4 @@
-import PlantButton from '../../../components/PlantButton';
+import PlantButton from '../../../components/ui/PlantButton';
 import { Link } from 'react-router-dom';
 import ServiceCard from '../../services/components/ServiceCard';
 
