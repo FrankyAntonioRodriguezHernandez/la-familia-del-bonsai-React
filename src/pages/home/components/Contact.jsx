@@ -89,7 +89,7 @@ const Contact = () => {
                   <div>
                     <p className="text-sm md:text-base text-gray-600">Dirección</p>
                     <p className="text-base md:text-lg text-gray-800 font-semibold">
-                      Abrahan Delgado #60 / Libertad y Máximo Gómez. Ciego de Ávila, Cuba
+                      Abrahan Delgado #60, Ciego de Ávila, Cuba
                     </p>
                   </div>
                 </div>
