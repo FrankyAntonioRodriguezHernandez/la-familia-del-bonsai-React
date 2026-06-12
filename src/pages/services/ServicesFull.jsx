@@ -9,7 +9,7 @@ const ServicesFull = () => {
       image: require('../../images/Services/CayoCruz.webp')
     },
     {
-      title: "Expoventas de bonsai",
+      title: "Exposiciones y ventas",
       description: "Contamos con una exclusiva colección de bonsais cultivados y seleccionados cuidadosamente. Cada pieza representa años de dedicación y expertise en el arte del bonsai",
       image: require('../../images/Services/Expoventa.webp')
     },

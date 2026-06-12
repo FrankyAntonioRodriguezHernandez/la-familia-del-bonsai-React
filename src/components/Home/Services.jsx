@@ -10,7 +10,7 @@ const Services = () => {
       image: require('../../images/Services/CayoCruz.webp')
     },
     {
-      title: "Expoventas de bonsai",
+      title: "Exposiciones y ventas",
       description: "Más que una creación, una experiencia que se alimenta de naturaleza",
       image: require('../../images/Services/Expoventa.webp')
     },
