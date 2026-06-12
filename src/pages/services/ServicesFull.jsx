@@ -4,34 +4,34 @@ import ServiceCard from './components/ServiceCard';
 const ServicesFull = () => {
   const allServices = [
     {
-      title: "Expoventas de bonsai",
-      description: "Contamos con una exclusiva colección de bonsais cultivados y seleccionados cuidadosamente. Cada pieza representa años de dedicación y expertise en el arte del bonsai",
-      image: require('../../images/Services/Poda1.jpg')
-    },
-    {
       title: "Arrendamiento de bonsai",
       description: "Acceso temporal a nuestras colecciones premium de bonsais para sus eventos especiales. Una solución elegante para añadir sofisticación sin compromiso de compra",
-      image: require('../../images/Services/Arrendamiento1.jpg')
+      image: require('../../images/Services/CayoCruz.webp')
+    },
+    {
+      title: "Expoventas de bonsai",
+      description: "Contamos con una exclusiva colección de bonsais cultivados y seleccionados cuidadosamente. Cada pieza representa años de dedicación y expertise en el arte del bonsai",
+      image: require('../../images/Services/Expoventa.webp')
     },
     {
       title: "Decoración de eventos",
       description: "Transformamos espacios con arreglos botánicos especializados. Nuestros bonsais añaden belleza, equilibrio y una atmósfera de distinción a cualquier celebración",
-      image: require('../../images/Services/Decoracion1.jpg')
+      image: require('../../images/Services/Decoracion.webp')
     },
     {
       title: "Servicios de postventa",
       description: "Mantenimiento profesional, asesoramiento especializado y cuidado continuo para garantizar la longevidad y salud de su bonsai. Servicio integral post-compra",
-      image: require('../../images/Services/Poda1.jpg')
+      image: require('../../images/Services/Poda1.webp')
     },
     {
       title: "Talleres y cursos",
       description: "Programas educativos impartidos por expertos en el cultivo y mantenimiento de bonsais. Desde principiantes hasta técnicas avanzadas de poda y diseño",
-      image: require('../../images/Services/Taller1.jpg')
+      image: require('../../images/Services/Taller1.webp')
     },
     {
       title: "Diseño de Jardines Exóticos",
       description: "Creación de espacios verdes únicos integrando bonsais y plantas exóticas. Diseño personalizado para transformar su ambiente en un oasis natural de serenidad",
-      image: require('../../images/Services/Exotico.jpg')
+      image: require('../../images/Services/Exotico.webp')
     }
   ];
 

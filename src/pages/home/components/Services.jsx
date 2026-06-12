@@ -5,19 +5,19 @@ import ServiceCard from '../../services/components/ServiceCard';
 const Services = () => {
   const featuredServices = [
     {
-      title: "Expoventas de bonsai",
-      description: "Más que una creación, una experiencia que se alimenta de naturaleza",
-      image: require('../../../images/Services/Poda1.jpg')
-    },
-    {
       title: "Arrendamiento de bonsai",
       description: "Le ofrecemos la oportunidad de tener un bonsai como experiencia para eventos especiales",
-      image: require('../../../images/Services/Arrendamiento1.jpg')
+      image: require('../../../images/Services/CayoCruz.webp')
+    },
+    {
+      title: "Expoventas de bonsai",
+      description: "Más que una creación, una experiencia que se alimenta de naturaleza",
+      image: require('../../../images/Services/Expoventa.webp')
     },
     {
       title: "Decoración de eventos",
       description: "Transformamos su evento en una experiencia única, integrando elegancia y armonía",
-      image: require('../../../images/Services/Decoracion1.jpg')
+      image: require('../../../images/Services/Decoracion.webp')
     }
   ];
 
