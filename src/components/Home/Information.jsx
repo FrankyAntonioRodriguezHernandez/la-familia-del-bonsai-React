@@ -1,8 +1,8 @@
 import React from 'react';
-import zen1 from '../../../images/Information/Zen.png'
-import Bounganvilleas1 from '../../../images/Information/Bounganvilleas1.jpg'
-import ExpoVenta1 from '../../../images/Information/ExpoVenta1.jpg'
-import Jades from '../../../images/Information/Jades.jpg'
+import zen1 from '../../images/Information/Zen.png'
+import Bounganvilleas1 from '../../images/Information/Bounganvilleas1.jpg'
+import ExpoVenta1 from '../../images/Information/ExpoVenta1.jpg'
+import Jades from '../../images/Information/Jades.jpg'
 
 
 const Information = () => {
