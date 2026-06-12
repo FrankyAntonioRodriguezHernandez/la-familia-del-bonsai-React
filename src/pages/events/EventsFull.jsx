@@ -7,7 +7,7 @@ import FeriaMadre from '../../images/Events/FeriaMadre.jpg'
 
 const allEvents = [
   {
-    title: "Exposicion Por el día de Mamá",
+    title: "Exposicion Por el día de las Madres",
     description: "Compartiendo nuestro arte con las comunidades en saludo al día de las madres! Muchas Felicidades mamá",
     image: FeriaMadre
   },
