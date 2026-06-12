@@ -3,7 +3,7 @@ import { ChevronRightIcon } from '@heroicons/react/24/outline';
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'framer-motion';
 import Taller1 from '../../images/Events/Taller1.jpg';
-import Exposicion1 from '../images/Events/Exposicion1.jpg';
+import Exposicion1 from '../../images/Events/Exposicion1.jpg';
 import MejorMomento1 from '../../images/Events/MejorMomento1.jpg';
 import DeviceFrame from '../../pages/events/Device-frame';
 import PlantButton from '../ui/PlantButton';
