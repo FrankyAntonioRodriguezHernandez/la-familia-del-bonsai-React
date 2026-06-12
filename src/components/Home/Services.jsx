@@ -1,6 +1,6 @@
-import PlantButton from '../../../components/ui/PlantButton';
+import PlantButton from '../ui/PlantButton';
 import { Link } from 'react-router-dom';
-import ServiceCard from '../../services/components/ServiceCard';
+import ServiceCard from '../../pages/services/components/ServiceCard';
 
 const Services = () => {
   const featuredServices = [
