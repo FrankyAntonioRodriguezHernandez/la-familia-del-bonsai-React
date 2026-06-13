@@ -13,7 +13,6 @@ const Header = () => {
     { name: 'INICIO', target: 'inicio', isAnchor: true },
     { name: 'INFORMACIÓN', target: 'informacion', isAnchor: true },
     { name: 'SERVICIOS', target: 'services', isRoute: true },
-    { name: 'EVENTOS', target: 'events', isRoute: true },
     { name: 'CONTACTO', target: 'contacto', isAnchor: true }
   ];
 
