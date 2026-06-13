@@ -26,12 +26,12 @@ const ServicesFull = () => {
     {
       title: "Talleres y cursos",
       description: "Programas educativos impartidos por expertos en el cultivo y mantenimiento de bonsais. Desde principiantes hasta técnicas avanzadas de poda y diseño",
-      image: require('../../images/Services/Taller1.webp')
+      image: reUquire('../../images/Services/Taller1.webp')
     },
     {
       title: "Diseño de Jardines Exóticos",
       description: "Creación de espacios verdes únicos integrando bonsais y plantas exóticas. Diseño personalizado para transformar su ambiente en un oasis natural de serenidad",
-      image: require('../../images/Services/Exotico.webp')
+      image: require('../../images/Services/Exotico1.jpg')
     }
   ];
 
