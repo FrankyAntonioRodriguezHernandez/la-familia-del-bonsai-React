@@ -26,7 +26,7 @@ const ServicesFull = () => {
     {
       title: "Talleres y cursos",
       description: "Programas educativos impartidos por expertos en el cultivo y mantenimiento de bonsais. Desde principiantes hasta técnicas avanzadas de poda y diseño",
-      image: reUquire('../../images/Services/Taller1.webp')
+      image: require('../../images/Services/Taller1.webp')
     },
     {
       title: "Diseño de Jardines Exóticos",
