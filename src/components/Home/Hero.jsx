@@ -1,5 +1,5 @@
 import PlantButton from '../ui/PlantButton';
-import BonsaiTreeBonania1 from '../../images/Hero/BonsaiTreeBonania1.jpg';
+import BonsaiTreeBonania1 from '../../images/Hero/Bonania.webp';
 
 
 const Hero = () => {
