@@ -31,7 +31,7 @@ const ServicesFull = () => {
     {
       title: "Diseño de Jardines Exóticos",
       description: "Creación de espacios verdes únicos integrando bonsais y plantas exóticas. Diseño personalizado para transformar su ambiente en un oasis natural de serenidad",
-      image: require('../../images/Services/Exotico1.jpg')
+      image: require('../../images/Services/Exotico1.webp')
     }
   ];
 
