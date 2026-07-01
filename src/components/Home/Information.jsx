@@ -1,9 +1,8 @@
 import React from 'react';
-import zen1 from '../../images/Information/Zen.png'
-import Bounganvilleas1 from '../../images/Information/Bounganvilleas1.jpg'
-import ExpoVenta1 from '../../images/Information/ExpoVenta1.jpg'
-import Jades from '../../images/Information/Jades.jpg'
 import ServiceCard from '../ui/ServiceCard';
+import zen1 from '../../images/Information/Zen.webp'
+import Adaptacion from '../../images/Information/Adaptacion.webp'
+import Jades from '../../images/Information/Jades.webp'
 
 
 const Information = () => {
@@ -11,7 +10,7 @@ const Information = () => {
         {
       title: "Adaptamos el modelo de ecosistema natural",
       description: "Respetamos la naturaleza y sus ciclos, creando equilibrio duradero.",
-      image: Bounganvilleas1
+      image: Adaptacion
     },
     {
       title: "Transformamos cada espacio en un refugio zen",
