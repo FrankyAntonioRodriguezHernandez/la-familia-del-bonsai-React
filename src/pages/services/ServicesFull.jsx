@@ -21,17 +21,17 @@ const ServicesFull = () => {
     {
       title: "Servicios de postventa",
       description: "Mantenimiento profesional, asesoramiento especializado y cuidado continuo para garantizar la longevidad y salud de su bonsai. Servicio integral post-compra",
-      image: require('../../images/Services/Poda1.webp')
+      image: require('../../images/Services/Poda.webp')
     },
     {
       title: "Talleres y cursos",
       description: "Programas educativos impartidos por expertos en el cultivo y mantenimiento de bonsais. Desde principiantes hasta técnicas avanzadas de poda y diseño",
-      image: require('../../images/Services/Taller1.webp')
+      image: require('../../images/Services/Taller.webp')
     },
     {
       title: "Diseño de Jardines Exóticos",
       description: "Creación de espacios verdes únicos integrando bonsais y plantas exóticas. Diseño personalizado para transformar su ambiente en un oasis natural de serenidad",
-      image: require('../../images/Services/Exotico1.webp')
+      image: require('../../images/Services/Exotico.webp')
     }
   ];
 
