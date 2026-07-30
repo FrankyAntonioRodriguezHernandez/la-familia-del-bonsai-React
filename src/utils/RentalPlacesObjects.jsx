@@ -1,42 +1,15 @@
 
-import ficusLobby from '../images/Renta/PlayaParaiso/FicusLobbyAlejado.jpg';
-import paredPiscina from '../images/Renta/PlayaParaiso/ParedPicina.jpg';
-import piscina from '../images/Renta/PlayaParaiso/Piscina.jpg';
-import cayoCruz1 from '../images/Renta/Cayo Cruz/1.webp';
-import cayoCruz2 from '../images/Renta/Cayo Cruz/2.jpg';
-import cayoCruz3 from '../images/Renta/Cayo Cruz/3.jpg';
-import Meliacc1 from '../images/Renta/Melia Cayo Coco/Meliacc1.jpg';
-import Meliacc2 from '../images/Renta/Melia Cayo Coco/Meliacc2.jpg';
-import Meliacc3 from '../images/Renta/Melia Cayo Coco/Meliacc3.jpg';
-import IDaiquiri1 from '../images/Renta/IberoestarDaiquiri/1.jpg'
-import IDaiquiri2 from '../images/Renta/IberoestarDaiquiri/2.jpg'
-import IDaiquiri3 from '../images/Renta/IberoestarDaiquiri/3.jpg'
-import MeliaCR1 from '../images/Renta/MeliaCostaRey/1.jpg'
-import MeliaCR2 from '../images/Renta/MeliaCostaRey/2.jpg'
-import MeliaCR3 from '../images/Renta/MeliaCostaRey/3.jpg'
-import MeliaJR1 from '../images/Renta/MeliaJardinesDelRey/1.jpg'
-import MeliaJR2 from '../images/Renta/MeliaJardinesDelRey/2.jpg'
-import MeliaJR3 from '../images/Renta/MeliaJardinesDelRey/3.jpg'
-import Mojito1 from '../images/Renta/Mojito/1.jpg'
-import Mojito2 from '../images/Renta/Mojito/2.jpg'
-import Mojito3 from '../images/Renta/Mojito/3.jpg'
-import PlayaCoco1 from '../images/Renta/PlayaCoco/1.jpg'
-import PlayaCoco2 from '../images/Renta/PlayaCoco/2.jpg'
-import PlayaCoco3 from '../images/Renta/PlayaCoco/3.jpg'
-import Villavigia1 from '../images/Renta/VillaVigia/1.webp'
-
-
 export const RentalPlacesObjects = [
   {
     name: 'Playa Paraiso',
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Nuestros bonsais acompanan areas de recepcion, piscina y espacios de descanso para aportar frescura, equilibrio y una presencia natural elegante.',
+      'Un ficus imponente recibe a los huespedes en el lobby, mientras que jardineras de bonsais bordean la piscina aportando frescura y un contraste verde junto al agua.',
     items: [
-      { image: ficusLobby, text: 'Lobby con ficus' },
-      { image: paredPiscina, text: 'Area de piscina' },
-      { image: piscina, text: 'Piscina' }
+      { image: '/images/Renta/PlayaParaiso/FicusLobbyAlejado.jpg', text: 'Lobby con ficus' },
+      { image: '/images/Renta/PlayaParaiso/ParedPicina.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/PlayaParaiso/Piscina.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -44,11 +17,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Cruz',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'En este hotel frente al mar, nuestros bonsais decoran los pasillos y terrazas, creando pequenos rincones de calma que dialogan con la brisa marina.',
     items: [
-      { image: cayoCruz1, text: 'Lobby con ficus' },
-      { image: cayoCruz2, text: 'Area de piscina' },
-      { image: cayoCruz3, text: 'Piscina' }
+      { image: '/images/Renta/Cayo Cruz/1.webp', text: 'Lobby con ficus' },
+      { image: '/images/Renta/Cayo Cruz/2.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/Cayo Cruz/3.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -56,11 +29,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Guillermo',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'Las areas comunes de este resort incorporan bonsais de formas cuidadas que suavizan la arquitectura moderna y invitan al descanso entre vegetacion.',
     items: [
-      { image: IDaiquiri1, text: 'Lobby con ficus' },
-      { image: IDaiquiri2, text: 'Area de piscina' },
-      { image: IDaiquiri3, text: 'Piscina' }
+      { image: '/images/Renta/IberoestarDaiquiri/1.jpg', text: 'Lobby con ficus' },
+      { image: '/images/Renta/IberoestarDaiquiri/2.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/IberoestarDaiquiri/3.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -68,11 +41,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'Bonsais de gran porte enmarcan la entrada principal de este hotel, aportando una bienvenida elegante que se extiende hasta las zonas de piscina.',
     items: [
-      { image: Meliacc1, text: 'Lobby con ficus' },
-      { image: Meliacc2, text: 'Area de piscina' },
-      { image: Meliacc3, text: 'Piscina' }
+      { image: '/images/Renta/Melia Cayo Coco/Meliacc1.jpg', text: 'Lobby con ficus' },
+      { image: '/images/Renta/Melia Cayo Coco/Meliacc2.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/Melia Cayo Coco/Meliacc3.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -80,11 +53,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'Un recorrido de bonsais acompana los espacios sociales del hotel, aportando textura natural y momentos de serenidad entre actividades del resort.',
     items: [
-      { image: MeliaCR1, text: 'Lobby con ficus' },
-      { image: MeliaCR2, text: 'Area de piscina' },
-      { image: MeliaCR3, text: 'Piscina' }
+      { image: '/images/Renta/MeliaCostaRey/1.jpg', text: 'Lobby con ficus' },
+      { image: '/images/Renta/MeliaCostaRey/2.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/MeliaCostaRey/3.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -92,11 +65,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'Fiel a su nombre, este hotel suma nuestros bonsais a sus jardines, reforzando una ambientacion natural que acompana a los huespedes durante su estancia.',
     items: [
-      { image: MeliaJR1, text: 'Lobby con ficus' },
-      { image: MeliaJR2, text: 'Area de piscina' },
-      { image: MeliaJR3, text: 'Piscina' }
+      { image: '/images/Renta/MeliaJardinesDelRey/1.jpg', text: 'Lobby con ficus' },
+      { image: '/images/Renta/MeliaJardinesDelRey/2.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/MeliaJardinesDelRey/3.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -104,11 +77,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'De ambiente relajado y tropical, este hotel utiliza nuestros bonsais para reforzar su estilo natural en zonas de descanso y esparcimiento.',
     items: [
-      { image: Mojito1, text: 'Lobby con ficus' },
-      { image: Mojito2, text: 'Area de piscina' },
-      { image: Mojito3, text: 'Piscina' }
+      { image: '/images/Renta/Mojito/1.jpg', text: 'Lobby con ficus' },
+      { image: '/images/Renta/Mojito/2.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/Mojito/3.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -116,11 +89,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'Frente a la playa, nuestros bonsais suman un toque de distincion a los espacios exteriores del hotel, combinando naturaleza y descanso junto al mar.',
     items: [
-      { image: PlayaCoco1, text: 'Lobby con ficus' },
-      { image: PlayaCoco2, text: 'Area de piscina' },
-      { image: PlayaCoco3, text: 'Piscina' }
+      { image: '/images/Renta/PlayaCoco/1.jpg', text: 'Lobby con ficus' },
+      { image: '/images/Renta/PlayaCoco/2.jpg', text: 'Area de piscina' },
+      { image: '/images/Renta/PlayaCoco/3.jpg', text: 'Piscina' }
     ]
   },
   {
@@ -128,9 +101,9 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Guillermo',
     description:
-      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+      'En esta villa, un bonsai cuidadosamente ubicado se convierte en punto focal del espacio, aportando caracter y una presencia natural distintiva.',
     items: [
-      { image: Villavigia1, text: 'Lobby con ficus' },
+      { image: '/images/Renta/VillaVigia/1.webp', text: 'Bonsai en Villa Vigía' }
     ]
   }
 ];
