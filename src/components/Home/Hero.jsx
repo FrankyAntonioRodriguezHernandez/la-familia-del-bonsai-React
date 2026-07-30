@@ -27,7 +27,8 @@ const Hero = () => {
                 TRANSFORMAMOS SUS ESPACIOS EN<br />
                 ENTORNOS ARMONIOSOS
               </p>
-              <PlantButton text="Ver Catálogo" />
+              {/* Proximamente el catálogo */}
+              {/* <PlantButton text="Ver Catálogo" /> */}
             </div>
 
             <div className="flex justify-center lg:justify-end">
