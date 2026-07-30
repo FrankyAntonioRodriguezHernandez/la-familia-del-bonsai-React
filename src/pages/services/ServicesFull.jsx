@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import ServiceCard from '../../components/ui/ServiceCard';
 
 const ServicesFull = () => {
@@ -47,6 +48,15 @@ const ServicesFull = () => {
           {allServices.map((service, index) => (
             <ServiceCard key={index} service={service} />
           ))}
+        </div>
+
+        <div className="mt-14 text-center">
+          <Link
+            to="/rentals"
+            className="inline-flex rounded-lg bg-emerald-700 px-6 py-3 text-base font-semibold text-white shadow-lg transition-colors duration-300 hover:bg-emerald-800"
+          >
+            Ver lugares con nuestros bonsais
+          </Link>
         </div>
       </div>
     </section>
