@@ -31,10 +31,10 @@ const RentalsPlaces = () => {
                     {place.location}
                   </span>
                 </div>
-                <h2 className="mb-5 text-3xl font-bold text-gray-800 sm:text-4xl">
+                <h2 className="mb-5 text-2xl font-bold text-gray-800 sm:text-3xl lg:text-4xl">
                   {place.name}
                 </h2>
-                <p className="text-lg leading-relaxed text-gray-600 line-clamp-6">
+                <p className="text-base leading-relaxed text-gray-600 line-clamp-4 sm:text-lg lg:line-clamp-6">
                   {place.description}
                 </p>
               </div>
