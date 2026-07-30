@@ -20,9 +20,10 @@ import MeliaJR3 from '../images/Renta/MeliaJardinesDelRey/3.jpg'
 import Mojito1 from '../images/Renta/Mojito/1.jpg'
 import Mojito2 from '../images/Renta/Mojito/2.jpg'
 import Mojito3 from '../images/Renta/Mojito/3.jpg'
-import PlayaCoco1 from '../images/Renta/Mojito/1.jpg'
-import PlayaCoco2 from '../images/Renta/Mojito/2.jpg'
-import PlayaCoco3 from '../images/Renta/Mojito/3.jpg'
+import PlayaCoco1 from '../images/Renta/PlayaCoco/1.jpg'
+import PlayaCoco2 from '../images/Renta/PlayaCoco/2.jpg'
+import PlayaCoco3 from '../images/Renta/PlayaCoco/3.jpg'
+import Villavigia1 from '../images/Renta/VillaVigia/1.webp'
 
 
 export const RentalPlacesObjects = [
@@ -39,7 +40,7 @@ export const RentalPlacesObjects = [
     ]
   },
   {
-    name: 'Hotel Cayo Cruz',
+    name: 'La Marina Plaza & Spa',
     category: 'Hotel',
     location: 'Cayo Cruz',
     description:
@@ -51,7 +52,7 @@ export const RentalPlacesObjects = [
     ]
   },
   {
-    name: 'Iberoestar Daiquiri',
+    name: 'Iberostar Origin Daiquiri',
     category: 'Hotel',
     location: 'Cayo Guillermo',
     description:
@@ -63,7 +64,7 @@ export const RentalPlacesObjects = [
     ]
   },
   {
-    name: 'Melia Cayo Coco',
+    name: 'Meliá Cayo Coco',
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
@@ -75,7 +76,7 @@ export const RentalPlacesObjects = [
     ]
   },
   {
-    name: 'Melia Costa Rey',
+    name: 'Meliá Costa Rey',
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
@@ -87,7 +88,7 @@ export const RentalPlacesObjects = [
     ]
   },
   {
-    name: 'Melia Jardines del Rey',
+    name: 'Meliá Jardines del Rey',
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
@@ -120,6 +121,16 @@ export const RentalPlacesObjects = [
       { image: PlayaCoco1, text: 'Lobby con ficus' },
       { image: PlayaCoco2, text: 'Area de piscina' },
       { image: PlayaCoco3, text: 'Piscina' }
+    ]
+  },
+  {
+    name: 'Villa Vigía',
+    category: 'Hotel',
+    location: 'Cayo Guillermo',
+    description:
+      'Una ambientacion natural pensada para elevar la experiencia del visitante con bonsais que aportan calma, elegancia y conexion con el entorno.',
+    items: [
+      { image: Villavigia1, text: 'Lobby con ficus' },
     ]
   }
 ];

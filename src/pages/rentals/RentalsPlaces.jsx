@@ -21,8 +21,8 @@ const RentalsPlaces = () => {
       <section className="space-y-20 px-4 pb-24 sm:px-6 lg:px-8">
         {RentalPlacesObjects.map((place, index) => (
           <article key={place.name} className="mx-auto max-w-7xl">
-            <div className="grid gap-8 lg:grid-cols-[0.8fr_1.2fr] lg:items-center">
-              <div className={index % 2 === 0 ? 'lg:order-2' : ''}>
+            <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+              <div className={index % 2 === 0 ? 'lg:order-2 lg:self-center' : 'lg:self-center'}>
                 <div className="mb-4 flex flex-wrap gap-3">
                   <span className="rounded-full bg-emerald-700 px-4 py-2 text-sm font-semibold text-white">
                     {place.category}
@@ -34,7 +34,7 @@ const RentalsPlaces = () => {
                 <h2 className="mb-5 text-3xl font-bold text-gray-800 sm:text-4xl">
                   {place.name}
                 </h2>
-                <p className="text-lg leading-relaxed text-gray-600">
+                <p className="text-lg leading-relaxed text-gray-600 line-clamp-6">
                   {place.description}
                 </p>
               </div>
