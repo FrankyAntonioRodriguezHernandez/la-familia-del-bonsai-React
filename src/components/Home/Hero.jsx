@@ -1,5 +1,4 @@
 import PlantButton from '../ui/PlantButton';
-import BonsaiTreeBonania1 from '../../images/Hero/Bonania.webp';
 
 
 const Hero = () => {
@@ -35,7 +34,7 @@ const Hero = () => {
               <div className="relative">
                 <div className="w-80 h-80 bg-white rounded-full shadow-2xl overflow-hidden border-8 border-amber-100">
                   <img
-                    src={BonsaiTreeBonania1}
+                    src="/images/Hero/Bonania.webp"
                     alt="Bonsai Tree Bonania1"
                     className="w-full h-full object-cover"
                   />

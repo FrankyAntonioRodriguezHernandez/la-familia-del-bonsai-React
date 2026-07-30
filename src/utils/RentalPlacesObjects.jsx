@@ -5,11 +5,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Un ficus imponente recibe a los huespedes en el lobby, mientras que jardineras de bonsais bordean la piscina aportando frescura y un contraste verde junto al agua.',
+      'Un ficus imponente recibe a los huespedes en el lobby, mientras que jardineras de bonsais bordean la fuente aportando frescura y un contraste verde junto al agua.',
     items: [
       { image: '/images/Renta/PlayaParaiso/FicusLobbyAlejado.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/PlayaParaiso/ParedPicina.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/PlayaParaiso/Piscina.jpg', text: 'Piscina' }
+      { image: '/images/Renta/PlayaParaiso/ParedPicina.jpg', text: 'Pared de la fuente' },
+      { image: '/images/Renta/PlayaParaiso/Piscina.jpg', text: 'Fuente' }
     ]
   },
   {
@@ -101,7 +101,7 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Guillermo',
     description:
-      'En esta villa, un bonsai cuidadosamente ubicado se convierte en punto focal del espacio, aportando caracter y una presencia natural distintiva.',
+      'En esta villa, nuestros bonsais cuidadosamente ubicados en el Lobby se convierten en punto focal del espacio, aportando caracter y una presencia natural distintiva.',
     items: [
       { image: '/images/Renta/VillaVigia/1.webp', text: 'Bonsai en Villa Vigía' }
     ]

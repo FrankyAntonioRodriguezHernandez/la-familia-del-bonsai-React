@@ -1,26 +1,22 @@
 import React from 'react';
 import ServiceCard from '../ui/ServiceCard';
-import zen1 from '../../images/Information/Zen.webp'
-import Adaptacion from '../../images/Information/Adaptacion.webp'
-import Jades from '../../images/Information/Jades.webp'
-
 
 const Information = () => {
   const infoCards = [
         {
       title: "Adaptamos el modelo de ecosistema natural",
       description: "Respetamos la naturaleza y sus ciclos, creando equilibrio duradero.",
-      image: Adaptacion
+      image: "images/Information/Adaptacion.webp"
     },
     {
       title: "Transformamos cada espacio en un refugio zen",
       description: "Cada bonsai es único, cada espacio es especial. Creamos armonía perfecta.",
-      image: zen1
+      image: "images/Information/Zen.webp"
     },
     {
       title: "Innovamos en poner la tradición milenaria",
       description: "Combinamos técnicas ancestrales con innovación moderna.",
-      image: Jades
+      image: "images/Information/Jades.webp"
     }
   ];
 
