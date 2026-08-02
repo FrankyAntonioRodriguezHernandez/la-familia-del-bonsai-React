@@ -7,9 +7,9 @@ export const RentalPlacesObjects = [
     description:
       'Un ficus imponente recibe a los huespedes en el lobby, mientras que jardineras de bonsais bordean la fuente aportando frescura y un contraste verde junto al agua.',
     items: [
-      { image: '/images/Renta/PlayaParaiso/FicusLobbyAlejado.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/PlayaParaiso/ParedPicina.jpg', text: 'Pared de la fuente' },
-      { image: '/images/Renta/PlayaParaiso/Piscina.jpg', text: 'Fuente' }
+      { image: '/images/Renta/PlayaParaiso/FicusLobbyAlejado.webp', text: '' },
+      { image: '/images/Renta/PlayaParaiso/ParedPicina.webp', text: '' },
+      { image: '/images/Renta/PlayaParaiso/Fuente.webp', text: '' }
     ]
   },
   {
@@ -19,9 +19,9 @@ export const RentalPlacesObjects = [
     description:
       'En este hotel frente al mar, nuestros bonsais decoran los pasillos y terrazas, creando pequenos rincones de calma que dialogan con la brisa marina.',
     items: [
-      { image: '/images/Renta/Cayo Cruz/1.webp', text: 'Lobby con ficus' },
-      { image: '/images/Renta/Cayo Cruz/2.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/Cayo Cruz/3.jpg', text: 'Piscina' }
+      { image: '/images/Renta/Cayo Cruz/1.webp', text: '' },
+      { image: '/images/Renta/Cayo Cruz/2.jpg', text: '' },
+      { image: '/images/Renta/Cayo Cruz/3.jpg', text: '' }
     ]
   },
   {
@@ -31,9 +31,9 @@ export const RentalPlacesObjects = [
     description:
       'Las areas comunes de este resort incorporan bonsais de formas cuidadas que suavizan la arquitectura moderna y invitan al descanso entre vegetacion.',
     items: [
-      { image: '/images/Renta/IberoestarDaiquiri/1.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/IberoestarDaiquiri/2.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/IberoestarDaiquiri/3.jpg', text: 'Piscina' }
+      { image: '/images/Renta/IberoestarDaiquiri/1.jpg', text: '' },
+      { image: '/images/Renta/IberoestarDaiquiri/2.jpg', text: '' },
+      { image: '/images/Renta/IberoestarDaiquiri/3.jpg', text: '' }
     ]
   },
   {
@@ -41,11 +41,11 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Bonsais de gran porte enmarcan la entrada principal de este hotel, aportando una bienvenida elegante que se extiende hasta las zonas de piscina.',
+      'Bonsais de gran porte enmarcan la entrada principal de este hotel, aportando una bienvenida elegante que se extiende hasta las zonas de .',
     items: [
-      { image: '/images/Renta/Melia Cayo Coco/Meliacc1.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/Melia Cayo Coco/Meliacc2.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/Melia Cayo Coco/Meliacc3.jpg', text: 'Piscina' }
+      { image: '/images/Renta/Melia Cayo Coco/Meliacc1.jpg', text: '' },
+      { image: '/images/Renta/Melia Cayo Coco/Meliacc2.jpg', text: '' },
+      { image: '/images/Renta/Melia Cayo Coco/Meliacc3.jpg', text: '' }
     ]
   },
   {
@@ -55,9 +55,9 @@ export const RentalPlacesObjects = [
     description:
       'Un recorrido de bonsais acompana los espacios sociales del hotel, aportando textura natural y momentos de serenidad entre actividades del resort.',
     items: [
-      { image: '/images/Renta/MeliaCostaRey/1.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/MeliaCostaRey/2.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/MeliaCostaRey/3.jpg', text: 'Piscina' }
+      { image: '/images/Renta/MeliaCostaRey/1.jpg', text: '' },
+      { image: '/images/Renta/MeliaCostaRey/2.jpg', text: '' },
+      { image: '/images/Renta/MeliaCostaRey/3.jpg', text: '' }
     ]
   },
   {
@@ -67,9 +67,9 @@ export const RentalPlacesObjects = [
     description:
       'Fiel a su nombre, este hotel suma nuestros bonsais a sus jardines, reforzando una ambientacion natural que acompana a los huespedes durante su estancia.',
     items: [
-      { image: '/images/Renta/MeliaJardinesDelRey/1.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/MeliaJardinesDelRey/2.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/MeliaJardinesDelRey/3.jpg', text: 'Piscina' }
+      { image: '/images/Renta/MeliaJardinesDelRey/1.jpg', text: '' },
+      { image: '/images/Renta/MeliaJardinesDelRey/2.jpg', text: '' },
+      { image: '/images/Renta/MeliaJardinesDelRey/3.jpg', text: '' }
     ]
   },
   {
@@ -79,9 +79,9 @@ export const RentalPlacesObjects = [
     description:
       'De ambiente relajado y tropical, este hotel utiliza nuestros bonsais para reforzar su estilo natural en zonas de descanso y esparcimiento.',
     items: [
-      { image: '/images/Renta/Mojito/1.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/Mojito/2.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/Mojito/3.jpg', text: 'Piscina' }
+      { image: '/images/Renta/Mojito/1.jpg', text: '' },
+      { image: '/images/Renta/Mojito/2.jpg', text: '' },
+      { image: '/images/Renta/Mojito/3.jpg', text: '' }
     ]
   },
   {
@@ -91,9 +91,9 @@ export const RentalPlacesObjects = [
     description:
       'Frente a la playa, nuestros bonsais suman un toque de distincion a los espacios exteriores del hotel, combinando naturaleza y descanso junto al mar.',
     items: [
-      { image: '/images/Renta/PlayaCoco/1.jpg', text: 'Lobby con ficus' },
-      { image: '/images/Renta/PlayaCoco/2.jpg', text: 'Area de piscina' },
-      { image: '/images/Renta/PlayaCoco/3.jpg', text: 'Piscina' }
+      { image: '/images/Renta/PlayaCoco/1.jpg', text: '' },
+      { image: '/images/Renta/PlayaCoco/2.jpg', text: '' },
+      { image: '/images/Renta/PlayaCoco/3.jpg', text: '' }
     ]
   },
   {
@@ -103,7 +103,7 @@ export const RentalPlacesObjects = [
     description:
       'En esta villa, nuestros bonsais cuidadosamente ubicados en el Lobby se convierten en punto focal del espacio, aportando caracter y una presencia natural distintiva.',
     items: [
-      { image: '/images/Renta/VillaVigia/1.webp', text: 'Bonsai en Villa Vigía' }
+      { image: '/images/Renta/VillaVigia/1.webp', text: '' }
     ]
   }
 ];
