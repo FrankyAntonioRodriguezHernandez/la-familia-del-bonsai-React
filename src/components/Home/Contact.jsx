@@ -57,8 +57,8 @@ const Contact = () => {
                     <PhoneIcon className="h-5 w-5 md:h-6 md:w-6 text-emerald-600" />
                   </div>
                   <div>
-                    <p className="text-sm md:text-base text-gray-600">Teléfono</p>
-                    <p className="text-base md:text-lg text-gray-800 font-semibold">+53 53646319</p>
+                    <p className="text-sm md:text-base text-gray-600">Teléfonos</p>
+                    <p className="text-base md:text-lg text-gray-800 font-semibold">+53 58920115, +53 58220874, +53 53646319</p>
                   </div>
                 </div>
 
@@ -68,7 +68,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-sm md:text-base text-gray-600">WhatsApp</p>
-                    <p className="text-base md:text-lg text-gray-800 font-semibold">+53 53646319</p>
+                    <p className="text-base md:text-lg text-gray-800 font-semibold">+53 58920115, +53 58220874, +53 53646319</p>
                   </div>
                 </div>
 
