@@ -53,7 +53,7 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Un recorrido de bonsais acompana los espacios sociales del hotel, aportando textura natural y momentos de serenidad entre actividades del resort.',
+      'Un recorrido de bonsais acompaña los espacios sociales del hotel, aportando textura natural y momentos de serenidad entre actividades del resort.',
     items: [
       { image: '/images/Renta/MeliaCostaRey/1.jpg', text: '' },
       { image: '/images/Renta/MeliaCostaRey/2.jpg', text: '' },
@@ -65,7 +65,7 @@ export const RentalPlacesObjects = [
     category: 'Hotel',
     location: 'Cayo Coco',
     description:
-      'Fiel a su nombre, este hotel suma nuestros bonsais a sus jardines, reforzando una ambientacion natural que acompana a los huespedes durante su estancia.',
+      'Fiel a su nombre, este hotel suma nuestros bonsais a sus jardines, reforzando una ambientacion natural que acompaña a los huespedes durante su estancia.',
     items: [
       { image: '/images/Renta/MeliaJardinesDelRey/1.jpg', text: '' },
       { image: '/images/Renta/MeliaJardinesDelRey/2.jpg', text: '' },
@@ -103,7 +103,9 @@ export const RentalPlacesObjects = [
     description:
       'En esta villa, nuestros bonsais cuidadosamente ubicados en el Lobby se convierten en punto focal del espacio, aportando caracter y una presencia natural distintiva.',
     items: [
-      { image: '/images/Renta/VillaVigia/1.webp', text: '' }
+      { image: '/images/Renta/VillaVigia/1.webp', text: '' },
+      { image: '/images/Renta/VillaVigia/2.jpg', text: '' },
+      { image: '/images/Renta/VillaVigia/3.jpg', text: '' }
     ]
   }
 ];
