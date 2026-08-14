@@ -11,6 +11,7 @@ const Header = () => {
 
   const navItems = [
     { name: 'INICIO', target: 'inicio', isAnchor: true },
+    { name: 'TIENDA', target: 'tienda', isRoute: true },
     { name: 'INFORMACIÓN', target: 'informacion', isAnchor: true },
     { name: 'SERVICIOS', target: 'services', isRoute: true },
     { name: 'RENTAS', target: 'rentals', isRoute: true },
