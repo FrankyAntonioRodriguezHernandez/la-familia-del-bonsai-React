@@ -7,9 +7,9 @@ export const RentalPlacesObjects = [
     description:
       'Un ficus imponente recibe a los huespedes en el lobby, mientras que jardineras de bonsais bordean la fuente aportando frescura y un contraste verde junto al agua.',
     items: [
-      { image: '/images/Renta/PlayaParaiso/FicusLobbyAlejado.webp', text: '' },
-      { image: '/images/Renta/PlayaParaiso/ParedPicina.webp', text: '' },
-      { image: '/images/Renta/PlayaParaiso/Fuente.webp', text: '' }
+      { image: '/images/Renta/PlayaParaiso/1.webp', text: '' },
+      { image: '/images/Renta/PlayaParaiso/2.webp', text: '' },
+      { image: '/images/Renta/PlayaParaiso/3.webp', text: '' }
     ]
   },
   {
@@ -31,9 +31,9 @@ export const RentalPlacesObjects = [
     description:
       'Las areas comunes de este resort incorporan bonsais de formas cuidadas que suavizan la arquitectura moderna y invitan al descanso entre vegetacion.',
     items: [
-      { image: '/images/Renta/IberoestarDaiquiri/1.jpg', text: '' },
-      { image: '/images/Renta/IberoestarDaiquiri/2.jpg', text: '' },
-      { image: '/images/Renta/IberoestarDaiquiri/3.jpg', text: '' }
+      { image: '/images/Renta/IberoestarDaiquiri/1.webp', text: '' },
+      { image: '/images/Renta/IberoestarDaiquiri/2.webp', text: '' },
+      { image: '/images/Renta/IberoestarDaiquiri/3.webp', text: '' }
     ]
   },
   {
