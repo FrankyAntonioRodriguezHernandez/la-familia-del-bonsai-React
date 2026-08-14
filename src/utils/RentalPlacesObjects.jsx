@@ -20,8 +20,8 @@ export const RentalPlacesObjects = [
       'En este hotel frente al mar, nuestros bonsais decoran los pasillos y terrazas, creando pequenos rincones de calma que dialogan con la brisa marina.',
     items: [
       { image: '/images/Renta/Cayo Cruz/1.webp', text: '' },
-      { image: '/images/Renta/Cayo Cruz/2.jpg', text: '' },
-      { image: '/images/Renta/Cayo Cruz/3.jpg', text: '' }
+      { image: '/images/Renta/Cayo Cruz/2.webp', text: '' },
+      { image: '/images/Renta/Cayo Cruz/3.webp', text: '' }
     ]
   },
   {
