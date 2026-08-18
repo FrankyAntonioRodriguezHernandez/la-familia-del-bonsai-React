@@ -1,5 +1,5 @@
 
-export const RentalPlacesObjects = [
+export const GalleryPlacesObjects = [
   {
     name: 'Playa Paraiso',
     category: 'Hotel',

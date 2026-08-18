@@ -1,5 +1,5 @@
 import CircularGallery from '../../components/ui/CircularGallery';
-import { RentalPlacesObjects } from '../../utils/RentalPlacesObjects';
+import { GalleryPlacesObjects } from '../../utils/GalleryPlacesObjects';
 
 const RentalsPlaces = () => {
   return (
@@ -19,7 +19,7 @@ const RentalsPlaces = () => {
       </section>
 
       <section className="space-y-20 px-4 pb-24 sm:px-6 lg:px-8">
-        {RentalPlacesObjects.map((place, index) => (
+        {GalleryPlacesObjects.map((place, index) => (
           <article key={place.name} className="mx-auto max-w-7xl">
             <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
               <div className={index % 2 === 0 ? 'lg:order-2 lg:self-center' : 'lg:self-center'}>

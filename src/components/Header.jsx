@@ -14,7 +14,7 @@ const Header = () => {
     { name: 'TIENDA', target: 'tienda', isRoute: true },
     { name: 'INFORMACIÓN', target: 'informacion', isAnchor: true },
     { name: 'SERVICIOS', target: 'services', isRoute: true },
-    { name: 'RENTAS', target: 'rentals', isRoute: true },
+    { name: 'GALERÍA', target: 'gallery', isRoute: true },
     { name: 'CONTACTO', target: 'contacto', isAnchor: true }
   ];
 

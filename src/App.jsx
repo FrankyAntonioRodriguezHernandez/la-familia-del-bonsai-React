@@ -6,7 +6,7 @@ import ServicesFull from './pages/services/ServicesFull';
 import ScrollToTop from './hooks/ScrollToTop'; 
 import Footer from './components/Footer';
 import PrivacyPolicy from './pages/legalTerms/PrivacyPolicy';
-import RentalsPlaces from './pages/rentals/RentalsPlaces';
+import GalleryPlaces from './pages/gallery/GalleryPlaces';
 import Tienda from './pages/Tienda/Tienda';
 
 
@@ -20,7 +20,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/services" element={<ServicesFull />} />
           <Route path="/tienda" element={<Tienda />} />
-          <Route path="/rentals" element={<RentalsPlaces />} />
+          <Route path="/gallery" element={<GalleryPlaces />} />
           <Route path="/privacyPolicy" element={<PrivacyPolicy />} />
         </Routes>
         <Footer/>
