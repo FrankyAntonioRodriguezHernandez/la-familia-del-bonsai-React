@@ -7,12 +7,12 @@ export const BonsaisTiendaObjects = [
     },
     {
       title: "Bunganvillea",
-      description: "Bonsai de Bunganvillea de 20 años",
+      description: "Bonsai de Bunganvillea de 20 años de edad",
       image: 'images/Tienda/bunganvillea1.webp'
     },
     {
       title: "Ficus Retusa",
-      description: "Bonsai de Ficus Retusa de 10 años",
+      description: "Bonsai de Ficus Retusa de 10 años de edad",
       image: 'images/Tienda/ficus1.webp'
     },
     {
@@ -22,7 +22,7 @@ export const BonsaisTiendaObjects = [
     },
     {
       title: "Bunganvillea",
-      description: "Bonsai de Bunganvillea de 20 años",
+      description: "Bonsai de Bunganvillea de 20 años de edad",
       image: 'images/Tienda/bunganvillea2.webp'
     },
     {
