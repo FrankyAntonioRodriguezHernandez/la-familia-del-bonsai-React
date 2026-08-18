@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import ServiceCard from '../../components/ui/ServiceCard';
 import {BonsaisTiendaObjects} from '../../utils/BonsaisTiendaObjects.jsx';
-
+import { FaWhatsapp } from 'react-icons/fa';
 const Tienda = () => {
   
   const navigate = useNavigate();
@@ -26,8 +26,8 @@ const Tienda = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {BonsaisTiendaObjects.map((service, index) => (
-            <ServiceCard key={index} service={service} />
+          {BonsaisTiendaObjects.map((tiendaObject, index) => (
+            <ServiceCard key={index} service={tiendaObject} showButton={true} />
           ))}
         </div>
 
